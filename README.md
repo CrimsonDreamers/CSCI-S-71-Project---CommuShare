@@ -5,6 +5,6 @@ Team members + role:
 
 Product owner: Jicheng Zhou
 Scrum Master: Melanie Ruest
-Developers: Teddy
+Developers: Teddy Gesbert
             Xianglong
             Carl Zhao
