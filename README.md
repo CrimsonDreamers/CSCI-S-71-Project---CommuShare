@@ -11,5 +11,5 @@ Melanie Ruest
 
 #### Developers
 Teddy Gesbert\
-Xianglong\
+Xianglong He\
 Carl (Zhi Yuan) Zhao
