@@ -1,10 +1,15 @@
 # CSCI-S-71-Project
 
-TEAM NAME: CRIMSON DREAMERS
-Team members + role:
+## Team Information
+### CRIMSON DREAMERS
 
-Product owner: Jicheng Zhou
-Scrum Master: Melanie Ruest
-Developers: Teddy Gesbert
-            Xianglong
-            Carl Zhao
+#### Product Owner
+Jicheng Zhou
+
+#### Scrum Master
+Melanie Ruest
+
+#### Developers
+Teddy Gesbert\
+Xianglong\
+Carl (Zhi Yuan) Zhao
