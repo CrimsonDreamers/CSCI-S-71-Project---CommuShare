@@ -1,4 +1,4 @@
-# CSCI-S-71-Project
+# CSCI-S-71-Project - CommuShare
 
 ## Team Information
 ### CRIMSON DREAMERS
