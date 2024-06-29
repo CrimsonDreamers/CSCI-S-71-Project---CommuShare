@@ -22,8 +22,8 @@ Our Miro board is separated in two where we have on top a Kanban board with all 
 
 Everytime the team thought a task for the assigment was completed, the team was marking it with a emoji "check mark" to indicate to the PO that he will have to review the task and transfer it to done when he thinks the task has been completed.
 
-At the bottom we have started working on the project with starting with a coomon understanding workshop to make sure we all had the same vision for our product and we started writing user stories, Definition of ready & acceptance criteria etc.
-We did refined the user sories and added additional details (when needed) & acceptance criterias to each of them. Then we proceded with a poker planning session to estimate those user stories. Only developers were asked to estimate the backlog.
+At the bottom we have started working on the project with starting with a common understanding workshop to make sure we all had the same vision for our product and we started writing user stories, Definition of ready & acceptance criteria etc.
+We did refined the user sories and added additional details (when needed) & acceptance criterias to each of them. We created an item list for our DOR and placed it near our PB for reference. Then we proceded with a poker planning session to estimate those user stories. Only developers were asked to estimate the backlog.
 
 
 
