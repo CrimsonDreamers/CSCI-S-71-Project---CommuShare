@@ -45,7 +45,13 @@ We did refined the user sories and added additional details (when needed) & acce
 - Your sprint backlog, including both the user stories and developer tasks, is represented in a kanban board (1 point). The URL of the kanban board is documented in your README (1 point). Course staff can view the kanban board (1 point).
   - The sprint backlog kanban board is seen on our [Miro board](https://miro.com/app/board/uXjVK2OVZ-c=/).
 - You have a sprint burndown chart. On the x-axis, you display time markers in units of 1 day. On the y-axis, you display story points remaining to get done. There is a linear curve descending from left to right; the leftmost point of the curve is number of story points in your sprint at sprint day 1; the rightmost point is 0 story points remaining on the last day of the sprint. The burndown chart, or the URL of the burndown chart, is document in your README. Course staff can view the burndown chart. (1 point for each sentence you complete)
-  - Placeholder (Mel)
+  - The sprint burndown chart can be see [here](https://docs.google.com/spreadsheets/d/1VDQO14WLbvyb7d7xZ2lXw-nEitjI2kIVgZPprM8kmAQ/edit?gid=1873440250#gid=1873440250).
+  - The x-axis is each day until end of this sprint.
+  - The y-axis is story points to be done.
+  - There is a linear curve for predicted progress, and a linear curve for actual progress, descending down from left to right.
+  - The leftmost point of the curve is the number of story points we have allocated for this sprint at day 1.
+  - The rightmost point is 0 story points at the last day.
+  - The chart is available to everyone with the link.
 -----    
 - You have conducted multiple Daily Scrums. You document evidence of at least one daily scrum in your README.
   - Placeholder
