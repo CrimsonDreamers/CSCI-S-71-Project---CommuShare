@@ -4,7 +4,8 @@
 ### CRIMSON DREAMERS
 Team project - CommuShare\
 CommuShare is a web-app platform that allows helpful neighbors to share extra items with campus students who can browse and borrow items.\
-Miro board: https://miro.com/app/board/uXjVK3SfOu8=/?share_link_id=510488792723\
+[Miro board project planning](https://miro.com/app/board/uXjVK3SfOu8=/?share_link_id=510488792723\)
+[Miro board sprint 1](https://miro.com/app/board/uXjVK2OVZ-c=/)
 We have decided to use Miro to facilitate conversation and collaboration
 
 Team members + roles:
@@ -29,7 +30,7 @@ We did refined the user sories and added additional details (when needed) & acce
 
 ### Project Part 2
 - Sprint planning: You have a forecast of how many story points your team can complete during the sprint. The forecast is documented in your README.
-  - Forecast can be viewed [here](https://docs.google.com/spreadsheets/d/1VDQO14WLbvyb7d7xZ2lXw-nEitjI2kIVgZPprM8kmAQ/edit?gid=24#gid=24), as well as on our Miro board.
+  - Forecast can be viewed [here](https://docs.google.com/spreadsheets/d/1VDQO14WLbvyb7d7xZ2lXw-nEitjI2kIVgZPprM8kmAQ/edit?gid=24#gid=24), as well as on our [Miro board](https://miro.com/app/board/uXjVK2OVZ-c=/).
   - For pessimistic forecast, 20-25 story points per sprint; for reasonable forecast, 45 story points per sprint; for optimistic forecast, 50 story points per sprint.
 - The rationale for your forecast is documented in your README.
   - Placeholder (Mel)
@@ -43,7 +44,7 @@ We did refined the user sories and added additional details (when needed) & acce
   - Decomposed our two user stories into multiple developer tasks.
   - The tasks are listed alongside the user stories in the sprint backlog.
 - Your sprint backlog, including both the user stories and developer tasks, is represented in a kanban board (1 point). The URL of the kanban board is documented in your README (1 point). Course staff can view the kanban board (1 point).
-  - Placeholder (Mel)
+  - The sprint backlog kanban board is seen on our [Miro board](https://miro.com/app/board/uXjVK2OVZ-c=/).
 - You have a sprint burndown chart. On the x-axis, you display time markers in units of 1 day. On the y-axis, you display story points remaining to get done. There is a linear curve descending from left to right; the leftmost point of the curve is number of story points in your sprint at sprint day 1; the rightmost point is 0 story points remaining on the last day of the sprint. The burndown chart, or the URL of the burndown chart, is document in your README. Course staff can view the burndown chart. (1 point for each sentence you complete)
   - Placeholder (Mel)
 -----    
