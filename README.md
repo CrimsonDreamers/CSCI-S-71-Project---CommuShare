@@ -29,7 +29,7 @@ We did refined the user sories and added additional details (when needed) & acce
 
 ### Project Part 2
 - Sprint planning: You have a forecast of how many story points your team can complete during the sprint. The forecast is documented in your README.
-  - Forecast can be viewed [here](https://docs.google.com/spreadsheets/d/1VDQO14WLbvyb7d7xZ2lXw-nEitjI2kIVgZPprM8kmAQ/edit?gid=24#gid=24).
+  - Forecast can be viewed [here](https://docs.google.com/spreadsheets/d/1VDQO14WLbvyb7d7xZ2lXw-nEitjI2kIVgZPprM8kmAQ/edit?gid=24#gid=24), as well as on our Miro board.
   - For pessimistic forecast, 20-25 story points per sprint; for reasonable forecast, 45 story points per sprint; for optimistic forecast, 50 story points per sprint.
 - The rationale for your forecast is documented in your README.
   - Placeholder (Mel)
