@@ -35,7 +35,7 @@ We did refined the user sories and added additional details (when needed) & acce
 - The rationale for your forecast is documented in your README.
   - Placeholder (Mel)
 - You pulled stories into your sprint backlog. You pulled stories from the top of your product backlog. The aggregate size of the stories does not exceed your forecast. Developers participated in this activity (and in your project README, you made a statement or provided evidence that only Developers participated in this activity). (1 point for each item)
-  - See Miro board, stories are pulled from top of product backlog to sprint backlog.
+  - See [Miro board](https://miro.com/app/board/uXjVK2OVZ-c=/), stories are pulled from top of product backlog to sprint backlog.
   - Aggregated size of stories is 40, while the forecast for this sprint is 45.
   - Only developers participated in this activity.
 - All of the stories in your sprint backlog are the right size: the size of each backlog item is less than half your forecast velocity for the sprint. If you noticed PBIs that are too large to get done in a sprint, you refined them by splitting them into smaller stories and estimating the smaller stories.
