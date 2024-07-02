@@ -11,20 +11,32 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:commushare_front/main.dart';
 
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
+  testWidgets('Unit test builds', (WidgetTester tester) async {
+    // Make sure the Unit test builds
+    expect(true, true);
+    expect(42, 6 * 7);
+  });
+
+  testWidgets('App builds', (WidgetTester tester) async {
+    // Build our app and trigger a frame.
+    await tester.pumpWidget(const MyApp());
+  });
+
+  testWidgets('later', (WidgetTester tester) async {
     // Build our app and trigger a frame.
     await tester.pumpWidget(const MyApp());
 
     // Verify that our counter starts at 0.
-    expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
+    expect(find.text('Sign up'), findsOneWidget);
+    expect(find.text('Sign in'), findsNothing);
+    //expect(find.text('1'), findsNothing);
 
     // Tap the '+' icon and trigger a frame.
-    await tester.tap(find.byIcon(Icons.add));
+    await tester.tap(find.byElementType(ElevatedButton).first);
     await tester.pump();
 
     // Verify that our counter has incremented.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
+    expect(find.text('Sign up'), findsNothing);
+    expect(find.text('Sign in'), findsOneWidget); 
   });
 }
