@@ -29,21 +29,23 @@ We did refined the user sories and added additional details (when needed) & acce
 
 ### Project Part 2
 - Sprint planning: You have a forecast of how many story points your team can complete during the sprint. The forecast is documented in your README.
-  - Placeholder
+  - Placeholder (Mel)
 - The rationale for your forecast is documented in your README.
-  - Placeholder
+  - Placeholder (Mel)
 - You pulled stories into your sprint backlog. You pulled stories from the top of your product backlog. The aggregate size of the stories does not exceed your forecast. Developers participated in this activity (and in your project README, you made a statement or provided evidence that only Developers participated in this activity). (1 point for each item)
-  - Placeholder
+  - See Miro board, stories are pulled from top of product backlog to sprint backlog.
+  - Aggregated size of stories is 40, while the forecast for this sprint is 45.
+  - Only developers participated in this activity.
 - All of the stories in your sprint backlog are the right size: the size of each backlog item is less than half your forecast velocity for the sprint. If you noticed PBIs that are too large to get done in a sprint, you refined them by splitting them into smaller stories and estimating the smaller stories.
-  - Placeholder
+  - Size of each item is 20, which is less than half of 45 (our forecast velocity for the sprint).
 - You decomposed user stories into developer tasks (1 point). The tasks are clearly listed in your sprint backlog (1 point).
-  - Placeholder
+  - Decomposed our two user stories into multiple developer tasks.
+  - The tasks are listed alongside the user stories in the sprint backlog.
 - Your sprint backlog, including both the user stories and developer tasks, is represented in a kanban board (1 point). The URL of the kanban board is documented in your README (1 point). Course staff can view the kanban board (1 point).
-  - Placeholder
+  - Placeholder (Mel)
 - You have a sprint burndown chart. On the x-axis, you display time markers in units of 1 day. On the y-axis, you display story points remaining to get done. There is a linear curve descending from left to right; the leftmost point of the curve is number of story points in your sprint at sprint day 1; the rightmost point is 0 story points remaining on the last day of the sprint. The burndown chart, or the URL of the burndown chart, is document in your README. Course staff can view the burndown chart. (1 point for each sentence you complete)
-  - Placeholder
- 
-    
+  - Placeholder (Mel)
+-----    
 - You have conducted multiple Daily Scrums. You document evidence of at least one daily scrum in your README.
   - Placeholder
 - In your daily scrums, you discussed: as a group of Developers, what did you do in the last 24 hours that helped you meet the Sprint Goal? In your README, document which team members did which activities. (1 point for each team member's response, up to a maximum of 5 points)
