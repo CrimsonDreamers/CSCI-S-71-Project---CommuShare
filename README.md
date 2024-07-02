@@ -2,7 +2,9 @@
 
 ## Team Information
 ### CRIMSON DREAMERS
-Team project - CommuShare - Miro board: https://miro.com/app/board/uXjVK3SfOu8=/?share_link_id=510488792723
+Team project - CommuShare\
+CommuShare is a web-app platform that allows helpful neighbors to share extra items with campus students who can browse and borrow items.\
+Miro board: https://miro.com/app/board/uXjVK3SfOu8=/?share_link_id=510488792723\
 We have decided to use Miro to facilitate conversation and collaboration
 
 Team members + roles:
