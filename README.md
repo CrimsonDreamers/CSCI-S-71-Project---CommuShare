@@ -8,7 +8,6 @@ CommuShare is a web-app platform that allows helpful neighbors to share extra it
 [Miro board sprint 1](https://miro.com/app/board/uXjVK2OVZ-c=/)\
 We have decided to use Miro to facilitate conversation and collaboration
 
-Team members + roles:
 #### Product Owner
 Jicheng Zhou
 
