@@ -16,7 +16,7 @@ Melanie Ruest
 
 #### Developers
 Teddy Gesbert\
-Xianglong He\
+Daniel (Xianglong) He\
 Carl (Zhi Yuan) Zhao
 
 We started with a brainstorming for ideas and we decided of a vision for our project and product.
@@ -56,21 +56,32 @@ We did refined the user sories and added additional details (when needed) & acce
   - Daily scrum video is [here](meta_assets/daily scrum.mov).
 - In your daily scrums, you discussed: as a group of Developers, what did you do in the last 24 hours that helped you meet the Sprint Goal? In your README, document which team members did which activities. (1 point for each team member's response, up to a maximum of 5 points)
   - Visible in our [Miro board](https://miro.com/app/board/uXjVK2OVZ-c=/).
-  - 
+  - Teddy: Worked on the blank webpage and made sure it could be run on Firebase.
+  - Daniel: Participate in mob-programming TDD session for the first US.
+  - Mel: As a SM, I have facilitated events (Sprint Planning, Stakeholder interview, Daily Scrum). As a dev, I joined my team in mob programming TDD session.
+  - Jicheng: As a PO, I met with our true stakeholder Price, made sure our user stories reflected his needs. As a programmer, I joined my team in mob programming TDD sessions.
+  - Carl: Worked in Mob-programming session, met with our stakeholder, worked on the first US, brainstorm on dev solutions.
 - In your daily scrums, you discussed: as a group of Developers, what will you do in the next 24 hours to meet the Sprint Goal? In your README, document which team members plan to do which activities. (1 point for each team member's response, up to a maximum of 5 points)
   - Visible in our [Miro board](https://miro.com/app/board/uXjVK2OVZ-c=/).
-  - 
+  - Teddy: Mob programming session and TDD for completing the blank webpage.
+  - Daniel: Participating to another mob programming TDD session to complete first US.
+  - Mel: I will make sure my team meets to conduct mob programming TDD session and prepare for the next events. I will be there if we discover any impediments.
+  - Jicheng: I will join my team in Mob programming TDD session to complete the first US. As a PO, I will make sure i will be available if my team needs me to answer a question on US.
+  - Carl: Work with my team in a TDD mob programming session to complete the first US.
 - In your daily scrums, you discussed: do you see any impediment that prevents the Developers from meeting the Sprint Goal? What are the impediments? What is your impediment removal plan? (1 point for each question answered)
   - Visible in our [Miro board](https://miro.com/app/board/uXjVK2OVZ-c=/).
-  - 
+  - Yes we see one impediment.
+  - One impediment: Teddy has an Azerty keyboard.
+  - The removal plan is to mob program with Teddy as the driver until the dev environment is set up for the other devs.
 - Every day during the sprint, update your sprint task board and burndown chart. Provide evidence (URLs or images) in your README to show that you did this. (1 point for each time you updated your tracking indicators, up to a maximum of 2 points)
-  - Placeholder
+  - Sprint burndown URL is [here](https://docs.google.com/spreadsheets/d/1VDQO14WLbvyb7d7xZ2lXw-nEitjI2kIVgZPprM8kmAQ/edit?gid=1873440250#gid=1873440250).
 - There is evidence that you paired or mobbed on your code. The evidence could be a photo or video of your team working together, or it could be some other kind of evidence. The evidence is included in your README. (1 point for each team member who participated, up to a maximum of 5 points)
   - [Photo evidence 1.](meta_assets/mob programming jicheng mel teddy carl.jpg)
   - [Photo evidence 2.](meta_assets/mob programming mel xianglong teddy.jpg)
   - All five team members have demonstrated that they have participated in mob programming.
 - There is evidence that you are building your product test-first. There are at least 10 micro-scale unit tests in your test suite, and they all pass. (1 point for each unit test, up to a maximum of 10 points)
-  - Placeholder
+  - There are twelve micro-scale unit tests [here](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/blob/main/commushare_front/test/widget_test.dart#L14-L155).
+  - Screenshot of all unit tests passing TODO
 - Your team conducts a Sprint Review.
   - Placeholder
 - Your product increment is working software. The working software is running on a publicly accessible system (this could be a web server, a mobile app store, or something else.) Your README includes evidence that your product increment is working software. Your README includes the URL of the working software, an invitation to test the mobile app, etc. (1 point for each sentence in this rubric element)
@@ -80,5 +91,5 @@ We did refined the user sories and added additional details (when needed) & acce
 - Your team conducts a Sprint Retrospective. You identify an action that will make your team significantly better. You articulate your action plan as a product backlog item, including acceptance criteria. The new PBI is at the top of your product backlog, ready to be pulled into the next sprint.
   - Placeholder
 - All of the PBIs in your product backlog are true user stories.
-  - Placeholder
+  - Please see [Miro board](https://miro.com/app/board/uXjVK2OVZ-c=/).
 
