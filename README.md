@@ -50,21 +50,25 @@ We did refined the user sories and added additional details (when needed) & acce
   - The y-axis is story points to be done.
   - There is a linear curve for predicted progress, and a linear curve for actual progress, descending down from left to right.
   - The leftmost point of the curve is the number of story points we have allocated for this sprint at day 1.
-  - The rightmost point is 0 story points at the last day.
+  - The rightmost point is zero story points at the last day.
   - The chart is available to everyone with the link.
------    
 - You have conducted multiple Daily Scrums. You document evidence of at least one daily scrum in your README.
-  - Placeholder
+  - Daily scrum video is [here](meta_assets/daily scrum.mov).
 - In your daily scrums, you discussed: as a group of Developers, what did you do in the last 24 hours that helped you meet the Sprint Goal? In your README, document which team members did which activities. (1 point for each team member's response, up to a maximum of 5 points)
-  - Placeholder
+  - Visible in our [Miro board](https://miro.com/app/board/uXjVK2OVZ-c=/).
+  - 
 - In your daily scrums, you discussed: as a group of Developers, what will you do in the next 24 hours to meet the Sprint Goal? In your README, document which team members plan to do which activities. (1 point for each team member's response, up to a maximum of 5 points)
-  - Placeholder
+  - Visible in our [Miro board](https://miro.com/app/board/uXjVK2OVZ-c=/).
+  - 
 - In your daily scrums, you discussed: do you see any impediment that prevents the Developers from meeting the Sprint Goal? What are the impediments? What is your impediment removal plan? (1 point for each question answered)
-  - Placeholder
+  - Visible in our [Miro board](https://miro.com/app/board/uXjVK2OVZ-c=/).
+  - 
 - Every day during the sprint, update your sprint task board and burndown chart. Provide evidence (URLs or images) in your README to show that you did this. (1 point for each time you updated your tracking indicators, up to a maximum of 2 points)
   - Placeholder
 - There is evidence that you paired or mobbed on your code. The evidence could be a photo or video of your team working together, or it could be some other kind of evidence. The evidence is included in your README. (1 point for each team member who participated, up to a maximum of 5 points)
-  - Placeholder
+  - [Photo evidence 1.](meta_assets/mob programming jicheng mel teddy carl.jpg)
+  - [Photo evidence 2.](meta_assets/mob programming mel xianglong teddy.jpg)
+  - All five team members have demonstrated that they have participated in mob programming.
 - There is evidence that you are building your product test-first. There are at least 10 micro-scale unit tests in your test suite, and they all pass. (1 point for each unit test, up to a maximum of 10 points)
   - Placeholder
 - Your team conducts a Sprint Review.
