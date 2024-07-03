@@ -81,7 +81,7 @@ We did refined the user sories and added additional details (when needed) & acce
   - All five team members have demonstrated that they have participated in mob programming.
 - There is evidence that you are building your product test-first. There are at least 10 micro-scale unit tests in your test suite, and they all pass. (1 point for each unit test, up to a maximum of 10 points)
   - There are twelve micro-scale unit tests [here](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/blob/main/commushare_front/test/widget_test.dart#L14-L155).
-  - Screenshot of all unit tests passing TODO
+  - Screenshot of all unit tests passing [here.](meta_assets/unit tests passing.png)
 - Your team conducts a Sprint Review.
   - Placeholder
 - Your product increment is working software. The working software is running on a publicly accessible system (this could be a web server, a mobile app store, or something else.) Your README includes evidence that your product increment is working software. Your README includes the URL of the working software, an invitation to test the mobile app, etc. (1 point for each sentence in this rubric element)
