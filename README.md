@@ -4,7 +4,7 @@
 ### CRIMSON DREAMERS
 Project - **CommuShare**\
 CommuShare is a web-app platform that allows helpful neighbors to share extra items with campus students who can browse and borrow items.\
-CommuShare is ONLINE: https://commu-share.firebaseapp.com/\\
+CommuShare is ONLINE: https://commu-share.firebaseapp.com/\
 [Miro board project planning](https://miro.com/app/board/uXjVK3SfOu8=/?share_link_id=510488792723)\
 [Miro board sprint 1](https://miro.com/app/board/uXjVK2OVZ-c=/)\
 We have decided to use Miro to facilitate conversation and collaboration
