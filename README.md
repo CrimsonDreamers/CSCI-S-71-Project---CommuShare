@@ -31,7 +31,8 @@ We did refined the user sories and added additional details (when needed) & acce
 ### Project Part 2
 - Sprint planning: You have a forecast of how many story points your team can complete during the sprint. The forecast is documented in your README.
   - Forecast can be viewed [here](https://docs.google.com/spreadsheets/d/1VDQO14WLbvyb7d7xZ2lXw-nEitjI2kIVgZPprM8kmAQ/edit?gid=24#gid=24), as well as on our [Miro board](https://miro.com/app/board/uXjVK2OVZ-c=/).
-  - For pessimistic forecast, 20-25 story points per sprint; for reasonable forecast, 45 story points per sprint; for optimistic forecast, 50 story points per sprint.
+  - For pessimistic forecast, 65 story points per sprint; for reasonable forecast, 85 story points per sprint; for optimistic forecast, 100 story points per sprint.
+  - We've re-estimated and re-done our user stories as part of Sprint re-do on July 3rd, which means for our first Sprint we've decreased our forecast velocity.
 - The rationale for your forecast is documented in your README.
   - Rationale for this forecast: Because we didn't have starting data for our first sprint planning. We started by dividing the Product backlog total story points and we used the ranged project burndown because we thought it was more representative of the reality that can happened during a sprint. A lower amount of points and a very pessimistic scenario was envisioned in case of a catastrophe that would make it almost impossible to meet to work on our project. A realistic forecast is that we will probably do a little better than what we are confident to accomplish this sprint. And we went with a slightly more optimistic scenario if everything works on the first try and that we don't get any impediment that we didn't foresee. 45 was our basic number we came up during sprint planning based on how the developers feels that they can accomplish this sprint and that we will gather data and feedback to inspect and adapt in the next sprint.
 - You pulled stories into your sprint backlog. You pulled stories from the top of your product backlog. The aggregate size of the stories does not exceed your forecast. Developers participated in this activity (and in your project README, you made a statement or provided evidence that only Developers participated in this activity). (1 point for each item)
@@ -39,10 +40,10 @@ We did refined the user sories and added additional details (when needed) & acce
   - Aggregated size of stories is 40, while the forecast for this sprint is 45.
   - Only developers participated in this activity.
 - All of the stories in your sprint backlog are the right size: the size of each backlog item is less than half your forecast velocity for the sprint. If you noticed PBIs that are too large to get done in a sprint, you refined them by splitting them into smaller stories and estimating the smaller stories.
-  - Size of each item is 20, which is less than half of 45 (our forecast velocity for the sprint).
+  - Size of the largest item is 40, which is less than half of 85 (our usual forecast velocity for the sprint). For the first Sprint though, we've decreased our velocity to 20.
 - You decomposed user stories into developer tasks (1 point). The tasks are clearly listed in your sprint backlog (1 point).
-  - Decomposed our two user stories into multiple developer tasks.
-  - The tasks are listed alongside the user stories in the sprint backlog.
+  - Decomposed our first user story (which is the only one we are doing) into multiple developer tasks.
+  - The tasks are listed alongside the user story in the sprint backlog.
 - Your sprint backlog, including both the user stories and developer tasks, is represented in a kanban board (1 point). The URL of the kanban board is documented in your README (1 point). Course staff can view the kanban board (1 point).
   - The sprint backlog kanban board is seen on our [Miro board](https://miro.com/app/board/uXjVK2OVZ-c=/).
 - You have a sprint burndown chart. On the x-axis, you display time markers in units of 1 day. On the y-axis, you display story points remaining to get done. There is a linear curve descending from left to right; the leftmost point of the curve is number of story points in your sprint at sprint day 1; the rightmost point is 0 story points remaining on the last day of the sprint. The burndown chart, or the URL of the burndown chart, is document in your README. Course staff can view the burndown chart. (1 point for each sentence you complete)
