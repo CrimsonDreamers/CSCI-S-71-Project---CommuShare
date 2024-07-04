@@ -9,7 +9,7 @@ class SplashScreenWrapper extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    if (true) {
+    if (false) {
       return const Login();
     } else {
       return const Home();

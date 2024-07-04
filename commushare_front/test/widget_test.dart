@@ -10,6 +10,8 @@ import 'package:flutter_test/flutter_test.dart';
 
 import 'package:commushare_front/main.dart';
 
+
+
 void main() {
   testWidgets('Unit test builds', (WidgetTester tester) async {
     // Make sure the Unit test builds
@@ -32,36 +34,54 @@ void main() {
         findsOneWidget);
   });
 
-  testWidgets('Sign up Widget Button', (WidgetTester tester) async {
+  testWidgets('Borrow Widget Button', (WidgetTester tester) async {
     // Build our app and trigger a frame.
     await tester.pumpWidget(const MyApp());
     // Verify that one widget for signing up appears on the screen
-    expect(find.text('Sign up'), findsOneWidget);
+    expect(find.text('Borrow it'), findsOneWidget);
   });
 
   testWidgets('Able to click on a Button', (WidgetTester tester) async {
     // Build our app and trigger a frame.
     await tester.pumpWidget(const MyApp());
 
-    expect(find.byKey(const Key("Sign up")), findsOneWidget);
-    await tester.tap(find.byKey(const Key("Sign up")));
+    expect(find.byKey(const Key("Borrow it")), findsOneWidget);
+    await tester.tap(find.byKey(const Key("Borrow it")));
     await tester.pump();
   });
 
-  testWidgets('FormFields appears in the middle of the screen',
-      (WidgetTester tester) async {
+  testWidgets('Ability to access Sign in page', (WidgetTester tester) async {
     // Build our app and trigger a frame.
     await tester.pumpWidget(const MyApp());
 
-    // Verify that two form fields appear (Email, Password)
-    expect(find.byWidgetPredicate((Widget widget) => widget is FormField),
-        findsExactly(2));
+    expect(find.byKey(const Key("Go to Sign In")), findsOneWidget);
+    await tester.tap(find.byKey(const Key("Go to Sign In")));
+    await tester.pump();
+  });
+
+  testWidgets('FormFields appears in the middle of the Login Page',
+      (WidgetTester tester) async {
+    // Build our app and trigger a frame.
+ await tester.pumpWidget(const MyApp());
+
+ // Go to Sign in page
+ await tester.tap(find.byKey(const Key("Go to Sign In")));
+ // Wait for the navigation to complete 
+ await tester.pumpAndSettle();
+
+ // Verify that two form fields appear (Email, Password)
+ expect(find.byWidgetPredicate((Widget widget) => widget is FormField), findsExactly(2));
   });
 
   testWidgets('Sign in Confirm button exists and is clickable',
       (WidgetTester tester) async {
     // Build our app and trigger a frame.
     await tester.pumpWidget(const MyApp());
+
+    // Go to Sign in page
+ await tester.tap(find.byKey(const Key("Go to Sign In")));
+ // Wait for the navigation to complete 
+ await tester.pumpAndSettle();
 
     expect(find.byKey(const Key("Confirm Sign in")), findsOneWidget);
 
@@ -72,6 +92,11 @@ void main() {
   testWidgets('Switch to Sign up Page', (WidgetTester tester) async {
     // Build our app and trigger a frame.
     await tester.pumpWidget(const MyApp());
+
+    // Go to Sign in page
+ await tester.tap(find.byKey(const Key("Go to Sign In")));
+ // Wait for the navigation to complete 
+ await tester.pumpAndSettle();
 
     // Verify that one widget for signing up appears on the screen
     expect(find.text('Sign up'), findsOneWidget);
@@ -89,6 +114,11 @@ void main() {
     // Build our app and trigger a frame.
     await tester.pumpWidget(const MyApp());
 
+    // Go to Sign in page
+ await tester.tap(find.byKey(const Key("Go to Sign In")));
+ // Wait for the navigation to complete 
+ await tester.pumpAndSettle();
+
     // Verify that two form fields appear (Email, Password)
     expect(find.byWidgetPredicate((Widget widget) => widget is FormField),
         findsExactly(2));
@@ -105,6 +135,11 @@ void main() {
       (WidgetTester tester) async {
     // Build our app and trigger a frame.
     await tester.pumpWidget(const MyApp());
+
+    // Go to Sign in page
+ await tester.tap(find.byKey(const Key("Go to Sign In")));
+ // Wait for the navigation to complete 
+ await tester.pumpAndSettle();
 
     //Go to the Register Page
     await tester.tap(find.byKey(const Key("Sign up")));
@@ -124,15 +159,18 @@ void main() {
     // Build our app and trigger a frame.
     await tester.pumpWidget(const MyApp());
 
-    expect(find.text("Error"),
-        findsNothing);
+    // Go to Sign in page
+ await tester.tap(find.byKey(const Key("Go to Sign In")));
+ // Wait for the navigation to complete 
+ await tester.pumpAndSettle();
+
+    expect(find.text("Error"), findsNothing);
 
     expect(find.byKey(const Key("Confirm Sign in")), findsOne);
     await tester.tap(find.byKey(const Key("Confirm Sign in")));
     await tester.pump();
 
-    expect(find.text("Error"),
-        findsOne);
+    expect(find.text("Error"), findsOne);
   });
 
   testWidgets('I must enter valid mail address otherwise an alert is triggered',
@@ -140,17 +178,20 @@ void main() {
     // Build our app and trigger a frame.
     await tester.pumpWidget(const MyApp());
 
-expect(find.text("Error"),
-        findsNothing);
-    expect(find.byKey(const Key("Mail Address Text Field")), findsOne);
-    await tester.enterText(find.byKey(const Key("Mail Address Text Field")), "tommmm.gmail.com");
-    await tester.pump();
+    // Go to Sign in page
+ await tester.tap(find.byKey(const Key("Go to Sign In")));
+ // Wait for the navigation to complete 
+ await tester.pumpAndSettle();
 
+    expect(find.text("Error"), findsNothing);
+    expect(find.byKey(const Key("Mail Address Text Field")), findsOne);
+    await tester.enterText(
+        find.byKey(const Key("Mail Address Text Field")), "tommmm.gmail.com");
+    await tester.pump();
 
     await tester.tap(find.byKey(const Key("Confirm Sign in")));
     await tester.pump();
 
-    expect(find.text("Error"),
-        findsOne);
+    expect(find.text("Error"), findsOne);
   });
 }

@@ -27,8 +27,8 @@ class LoginState extends State<Login> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        body: Container(
+    return Material(
+        child: Container(
       child: login == true ? loginWidget(context) : register(context),
     ));
   }
@@ -68,7 +68,29 @@ class LoginState extends State<Login> {
                         ),
                       ),
                     ],
-                  ))
+                  )),
+              Expanded(child: Container()),
+              ElevatedButton(
+                  key: const Key("back Home"),
+                  style: ButtonStyle(
+                    backgroundColor: WidgetStateProperty.resolveWith<Color>(
+                        ((states) => Colors.white)),
+                    elevation: WidgetStateProperty.resolveWith((states) => 0),
+                  ),
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/home');
+                  },
+                  child: const Row(
+                    children: [
+                      Icon(
+                        Icons.home,
+                        size: 30,
+                      ),
+                    ],
+                  )),
+              Container(
+                width: 20,
+              ),
             ],
           ),
           Expanded(child: Container()),
@@ -83,16 +105,17 @@ class LoginState extends State<Login> {
                     child: FittedBox(
                         fit: BoxFit.scaleDown,
                         child: Text(
-                      "Sign in to CommuShare",
-                      textAlign: TextAlign.center,
-                      style: MediaQuery.of(context).size.width > 1200
-                          ? const TextStyle(color: Colors.white, fontSize: 45)
-                          : MediaQuery.of(context).size.width > 800
+                          "Sign in to CommuShare",
+                          textAlign: TextAlign.center,
+                          style: MediaQuery.of(context).size.width > 1200
                               ? const TextStyle(
-                                  color: Colors.white, fontSize: 40)
-                              : const TextStyle(
-                                  color: Colors.white, fontSize: 30),
-                    ))),
+                                  color: Colors.white, fontSize: 45)
+                              : MediaQuery.of(context).size.width > 800
+                                  ? const TextStyle(
+                                      color: Colors.white, fontSize: 40)
+                                  : const TextStyle(
+                                      color: Colors.white, fontSize: 30),
+                        ))),
                 SizedBox(
                   height: MediaQuery.of(context).size.height * 0.02,
                   width: MediaQuery.of(context).size.width * 0.6,
@@ -168,8 +191,10 @@ class LoginState extends State<Login> {
                             ((states) => Colors.white))),
                     onPressed: () {
                       if (name != "" && email != "" && email.contains("@")) {
-                        Navigator.pop(context);
-                        Fluttertoast.showToast(msg: "Succesfully Logged In");
+                        //Navigator.pop(context);
+                        Fluttertoast.showToast(
+                          //msg: "Succesfully Logged In");
+                          msg: "Coming soon!");
                       } else {
                         Alert(
                             context: context,
@@ -254,7 +279,29 @@ class LoginState extends State<Login> {
                         ),
                       ),
                     ],
-                  ))
+                  )),
+              Expanded(child: Container()),
+              ElevatedButton(
+                  key: const Key("back Home"),
+                  style: ButtonStyle(
+                    backgroundColor: WidgetStateProperty.resolveWith<Color>(
+                        ((states) => Colors.white)),
+                    elevation: WidgetStateProperty.resolveWith((states) => 0),
+                  ),
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/home');
+                  },
+                  child: const Row(
+                    children: [
+                      Icon(
+                        Icons.home,
+                        size: 30,
+                      ),
+                    ],
+                  )),
+              Container(
+                width: 20,
+              ),
             ],
           ),
           Expanded(child: Container()),
@@ -386,9 +433,9 @@ class LoginState extends State<Login> {
                           email != "" &&
                           password != "" &&
                           email.contains("@")) {
-                        Navigator.pop(context);
                         Fluttertoast.showToast(
-                            msg: "Account succesfully created");
+                            //msg: "Account succesfully created");
+                            msg: "Coming soon!");
                       } else {
                         Alert(
                             context: context,

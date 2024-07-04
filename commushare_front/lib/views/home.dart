@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:rflutter_alert/rflutter_alert.dart';
+
+import '../constant/color.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -8,62 +11,116 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      // This call to setState tells the Flutter framework that something has
-      // changed in this State, which causes it to rerun the build method below
-      // so that the display can reflect the updated values. If we changed
-      // _counter without calling setState(), then the build method would not be
-      // called again, and so nothing would appear to happen.
-      _counter++;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
-    // This method is rerun every time setState is called, for instance as done
-    // by the _incrementCounter method above.
-    //
-    // The Flutter framework has been optimized to make rerunning build methods
-    // fast, so that you can just rebuild anything that needs updating rather
-    // than having to individually change instances of widgets.
     return Scaffold(
       body: Center(
-        // Center is a layout widget. It takes a single child and positions it
-        // in the middle of the parent.
         child: Column(
-          // Column is also a layout widget. It takes a list of children and
-          // arranges them vertically. By default, it sizes itself to fit its
-          // children horizontally, and tries to be as tall as its parent.
-          //
-          // Column has various properties to control how it sizes itself and
-          // how it positions its children. Here we use mainAxisAlignment to
-          // center the children vertically; the main axis here is the vertical
-          // axis because Columns are vertical (the cross axis would be
-          // horizontal).
-          //
-          // TRY THIS: Invoke "debug painting" (choose the "Toggle Debug Paint"
-          // action in the IDE, or press "p" in the console), to see the
-          // wireframe for each widget.
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const Text(
-              'You have pushed the button this many times:',
+            Container(
+              height: 20,
             ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
+            Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                ElevatedButton(
+                    key: const Key("Go to Sign In"),
+                    style: ButtonStyle(
+                      backgroundColor: WidgetStateProperty.resolveWith<Color>(
+                          ((states) => Colors.white)),
+                      elevation: WidgetStateProperty.resolveWith((states) => 0),
+                    ),
+                    onPressed: () {
+                      Navigator.pushReplacementNamed(context, '/login');
+                    },
+                    child: const Row(
+                      children: [
+                        Text(
+                          "Sign in / Register",
+                          style: TextStyle(
+                            color: mainColor,
+                            fontSize: 30,
+                          ),
+                        ),
+                      ],
+                    )),
+                Container(
+                  height: 20,
+                ),
+              ],
             ),
+            Expanded(child: Container()),
+            SizedBox(
+              width: MediaQuery.of(context).size.width * 0.8,
+              height: 150,
+              child: Card(
+                child: Column(
+                  children: [
+                    const Text(
+                      "Pair of scissors",
+                      style: TextStyle(fontSize: 30),
+                    ),
+                    const FittedBox(
+                        fit: BoxFit.scaleDown,
+                        child: Text(
+                          "A beautiful pair of right-handed scissors",
+                          style: TextStyle(fontSize: 20),
+                        )),
+                    Expanded(child: Container()),
+                    SizedBox(
+                        width: 200,
+                        child: ElevatedButton(
+                          key: const Key("Borrow it"),
+                          style: ButtonStyle(
+                            backgroundColor:
+                                WidgetStateProperty.resolveWith<Color>(
+                                    ((states) => mainColor)),
+                            elevation:
+                                WidgetStateProperty.resolveWith((states) => 0),
+                          ),
+                          onPressed: () {
+                            Alert(
+                                context: context,
+                                title: "Let's grab it !",
+                                desc: "Go to Adams House, room 123 to get it",
+                                buttons: [
+                                  DialogButton(
+                                      color:
+                                          const Color.fromARGB(255, 18, 32, 47),
+                                      onPressed: () {
+                                        Navigator.pop(context);
+                                      },
+                                      child: const Text(
+                                        "Ok",
+                                        style: TextStyle(
+                                            color: Colors.white, fontSize: 20),
+                                      ))
+                                ]).show();
+                          },
+                          child: const FittedBox(
+                              fit: BoxFit.scaleDown,
+                              child: Text(
+                                "Borrow it",
+                                textAlign: TextAlign.center,
+                                style: const TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 25,
+                                ),
+                              )),
+                        )),
+                    Container(
+                      height: 10,
+                    )
+                  ],
+                ),
+              ),
+            ),
+            Expanded(child: Container()),
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+      // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
