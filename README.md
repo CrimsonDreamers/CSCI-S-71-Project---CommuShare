@@ -98,7 +98,7 @@ We did refined the user sories and added additional details (when needed) & acce
 - Your team conducts a Sprint Retrospective. You identify an action that will make your team significantly better. You articulate your action plan as a product backlog item, including acceptance criteria. The new PBI is at the top of your product backlog, ready to be pulled into the next sprint.
   - We've conducted our Sprint retro on July 4th. Visible on our [Miro board](https://miro.com/app/board/uXjVK2OVZ-c=/).
   - Picture [here.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/blob/main/meta_assets/sprint%20retrospective.jpg)
-  - We've identified an action that would make your team significantly better (Improve our dev skills)
+  - We've identified an action that would make our team significantly better (Improve our dev skills)
   - We've articulated the action plan as a product backlog item (improve developer skills), including acceptance criteria. Seen on our Miro board.
   - The new PBI is set at the top of our product backlog, ready to be pulled into the next sprint.
 - All of the PBIs in your product backlog are true user stories.
