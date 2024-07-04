@@ -4,6 +4,7 @@
 ### CRIMSON DREAMERS
 Project - **CommuShare**\
 CommuShare is a web-app platform that allows helpful neighbors to share extra items with campus students who can browse and borrow items.\
+CommuShare is ONLINE: https://commu-share.firebaseapp.com/\\
 [Miro board project planning](https://miro.com/app/board/uXjVK3SfOu8=/?share_link_id=510488792723)\
 [Miro board sprint 1](https://miro.com/app/board/uXjVK2OVZ-c=/)\
 We have decided to use Miro to facilitate conversation and collaboration
@@ -86,7 +87,9 @@ We did refined the user sories and added additional details (when needed) & acce
 - Your team conducts a Sprint Review.
   - Placeholder
 - Your product increment is working software. The working software is running on a publicly accessible system (this could be a web server, a mobile app store, or something else.) Your README includes evidence that your product increment is working software. Your README includes the URL of the working software, an invitation to test the mobile app, etc. (1 point for each sentence in this rubric element)
-  - Placeholder
+  - WORKING SOFTWARE PLACEHOLDER
+  - The software is publicly accessible. [URL is here.](https://commu-share.firebaseapp.com/)
+  - See top of README for the link of the web-app again, and confirmation that it is working.
 - At least one stakeholder attends your sprint review, and you provide evidence that your stakeholder was there. You revise your product backlog based on the feedback you receive. (1 point for each sentence in this rubric item)
   - Stakeholder attended our sprint review, photo is [here.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/blob/main/meta_assets/stakeholder%20in%20sprint%20review.jpg)
   - Placeholder
