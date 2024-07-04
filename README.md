@@ -85,16 +85,18 @@ We did refined the user sories and added additional details (when needed) & acce
   - There are twelve micro-scale unit tests [here](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/blob/main/commushare_front/test/widget_test.dart#L14-L155).
   - Screenshot of all unit tests passing [here.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/blob/main/meta_assets/unit%20tests%20passing.png)
 - Your team conducts a Sprint Review.
-  - Placeholder
+  - Our Sprint Review is recorded on our [Miro board](https://miro.com/app/board/uXjVK2OVZ-c=/).
+  - Additional screenshot placeholder
 - Your product increment is working software. The working software is running on a publicly accessible system (this could be a web server, a mobile app store, or something else.) Your README includes evidence that your product increment is working software. Your README includes the URL of the working software, an invitation to test the mobile app, etc. (1 point for each sentence in this rubric element)
   - [Screenshot of the working software.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/blob/main/meta_assets/working%20software.png)
   - The software is publicly accessible. [URL is here.](https://commu-share.firebaseapp.com/)
   - See top of README for the link of the web-app again, and confirmation that it is working.
 - At least one stakeholder attends your sprint review, and you provide evidence that your stakeholder was there. You revise your product backlog based on the feedback you receive. (1 point for each sentence in this rubric item)
   - Stakeholder attended our sprint review, photo is [here.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/blob/main/meta_assets/stakeholder%20in%20sprint%20review.jpg)
-  - Placeholder
+  - We've revised our product backlog as part of our Sprint re-do with feedback from stakeholder and PO, which is seen on Miro board.
 - Your team conducts a Sprint Retrospective. You identify an action that will make your team significantly better. You articulate your action plan as a product backlog item, including acceptance criteria. The new PBI is at the top of your product backlog, ready to be pulled into the next sprint.
   - Placeholder
 - All of the PBIs in your product backlog are true user stories.
   - Please see [Miro board](https://miro.com/app/board/uXjVK2OVZ-c=/).
+  - We've re-written and refined new user stories to be true user stories from the stakeholder's perspective.
 
