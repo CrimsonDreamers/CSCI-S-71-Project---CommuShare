@@ -95,8 +95,11 @@ We did refined the user sories and added additional details (when needed) & acce
   - Stakeholder attended our sprint review, photo is [here.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/blob/main/meta_assets/stakeholder%20in%20sprint%20review.jpg)
   - We've revised our product backlog as part of our Sprint re-do with feedback from stakeholder and PO, which is seen on Miro board.
 - Your team conducts a Sprint Retrospective. You identify an action that will make your team significantly better. You articulate your action plan as a product backlog item, including acceptance criteria. The new PBI is at the top of your product backlog, ready to be pulled into the next sprint.
-  - We've conducted our Sprint retro on July 4th.
-  - We've identified an action
+  - We've conducted our Sprint retro on July 4th. Visible on our [Miro board](https://miro.com/app/board/uXjVK2OVZ-c=/).
+  - Picture [here.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/blob/main/meta_assets/sprint%20retrospective.jpg)
+  - We've identified multiple action items to take. (e.g. Clarify with teacher if something is not clear at the beginning)
+  - We've articulated the action plan as a product backlog item (improve developer skills), including acceptance criteria. Seen on our Miro board.
+  - The new PBI is set at the top of our product backlog, ready to be pulled into the next sprint.
 - All of the PBIs in your product backlog are true user stories.
   - Please see [Miro board](https://miro.com/app/board/uXjVK2OVZ-c=/).
   - We've re-written and refined new user stories to be true user stories from the stakeholder's perspective.
