@@ -15,14 +15,13 @@ jobs:
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
-          working-directory: ./commushare_front
           channel: stable
       - run: flutter test && flutter build web
         working-directory: ./commushare_front
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          working-directory: ./commushare_front
+          entryPoint: ./commushare_front
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_COMMU_SHARE }}'
           channelId: live
           projectId: commu-share
