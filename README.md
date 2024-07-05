@@ -181,7 +181,7 @@ We did refined the user sories and added additional details (when needed) & acce
   - The CI system is publicly [accessible and viewable.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/actions) And successfully can build and test.
 - Continuous Delivery: You have a Continuous Delivery system running. When the build is "green", the CD system deploys your software to a production environment ("Production"); when the build is "red", the CD system doesn't alter Production. The CD system executes additional tests of your software in Production to ensure Production is up and running successfully after deployment. You have provided evidence that your CD system exists and behaves properly.
 / 5 pts
-  - We have the continuous delivery system running. Screenshot. **TODO**
+  - We have the continuous delivery system running, which is deployed by Github Actions. [Screenshot.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/blob/main/meta_assets/continuous%20delivery.png)
   - When our Github Actions finishes the build and test, it will deploy to Firebase and change the website. [Link.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/actions/runs/9811191618)
   - When our Github Actions fails, it does not deploy to Firebase. [Link.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/actions/runs/9811153690)
   - **TODO** does Firebase execute additional tests?
