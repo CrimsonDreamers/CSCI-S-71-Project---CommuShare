@@ -103,7 +103,7 @@ class _HomeState extends State<Home> {
                               child: Text(
                                 "Borrow it",
                                 textAlign: TextAlign.center,
-                                style: const TextStyle(
+                                style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 25,
                                 ),

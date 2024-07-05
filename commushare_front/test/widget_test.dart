@@ -5,6 +5,7 @@
 // gestures. You can also use WidgetTester to find child widgets in the widget
 // tree, read text, and verify that the values of widget properties are correct.
 
+import 'package:commushare_front/views/item.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
@@ -62,15 +63,15 @@ void main() {
   testWidgets('FormFields appears in the middle of the Login Page',
       (WidgetTester tester) async {
     // Build our app and trigger a frame.
- await tester.pumpWidget(const MyApp());
+    await tester.pumpWidget(const MyApp());
 
- // Go to Sign in page
- await tester.tap(find.byKey(const Key("Go to Sign In")));
- // Wait for the navigation to complete 
- await tester.pumpAndSettle();
+    // Go to Sign in page
+    await tester.tap(find.byKey(const Key("Go to Sign In")));
+    // Wait for the navigation to complete 
+    await tester.pumpAndSettle();
 
- // Verify that two form fields appear (Email, Password)
- expect(find.byWidgetPredicate((Widget widget) => widget is FormField), findsExactly(2));
+    // Verify that two form fields appear (Email, Password)
+    expect(find.byWidgetPredicate((Widget widget) => widget is FormField), findsExactly(2));
   });
 
   testWidgets('Sign in Confirm button exists and is clickable',
@@ -79,9 +80,9 @@ void main() {
     await tester.pumpWidget(const MyApp());
 
     // Go to Sign in page
- await tester.tap(find.byKey(const Key("Go to Sign In")));
- // Wait for the navigation to complete 
- await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const Key("Go to Sign In")));
+    // Wait for the navigation to complete 
+    await tester.pumpAndSettle();
 
     expect(find.byKey(const Key("Confirm Sign in")), findsOneWidget);
 
@@ -94,9 +95,9 @@ void main() {
     await tester.pumpWidget(const MyApp());
 
     // Go to Sign in page
- await tester.tap(find.byKey(const Key("Go to Sign In")));
- // Wait for the navigation to complete 
- await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const Key("Go to Sign In")));
+    // Wait for the navigation to complete 
+    await tester.pumpAndSettle();
 
     // Verify that one widget for signing up appears on the screen
     expect(find.text('Sign up'), findsOneWidget);
@@ -115,9 +116,9 @@ void main() {
     await tester.pumpWidget(const MyApp());
 
     // Go to Sign in page
- await tester.tap(find.byKey(const Key("Go to Sign In")));
- // Wait for the navigation to complete 
- await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const Key("Go to Sign In")));
+    // Wait for the navigation to complete 
+    await tester.pumpAndSettle();
 
     // Verify that two form fields appear (Email, Password)
     expect(find.byWidgetPredicate((Widget widget) => widget is FormField),
@@ -137,9 +138,9 @@ void main() {
     await tester.pumpWidget(const MyApp());
 
     // Go to Sign in page
- await tester.tap(find.byKey(const Key("Go to Sign In")));
- // Wait for the navigation to complete 
- await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const Key("Go to Sign In")));
+    // Wait for the navigation to complete 
+    await tester.pumpAndSettle();
 
     //Go to the Register Page
     await tester.tap(find.byKey(const Key("Sign up")));
@@ -160,9 +161,9 @@ void main() {
     await tester.pumpWidget(const MyApp());
 
     // Go to Sign in page
- await tester.tap(find.byKey(const Key("Go to Sign In")));
- // Wait for the navigation to complete 
- await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const Key("Go to Sign In")));
+    // Wait for the navigation to complete 
+    await tester.pumpAndSettle();
 
     expect(find.text("Error"), findsNothing);
 
@@ -179,9 +180,9 @@ void main() {
     await tester.pumpWidget(const MyApp());
 
     // Go to Sign in page
- await tester.tap(find.byKey(const Key("Go to Sign In")));
- // Wait for the navigation to complete 
- await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const Key("Go to Sign In")));
+    // Wait for the navigation to complete 
+    await tester.pumpAndSettle();
 
     expect(find.text("Error"), findsNothing);
     expect(find.byKey(const Key("Mail Address Text Field")), findsOne);
@@ -194,4 +195,5 @@ void main() {
 
     expect(find.text("Error"), findsOne);
   });
+
 }

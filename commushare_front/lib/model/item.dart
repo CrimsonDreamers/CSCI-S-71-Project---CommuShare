@@ -1,11 +1,10 @@
 import 'package:commushare_front/model/availability.dart';
-import 'package:commushare_front/model/profile.dart';
 
 class Item {
   final String id;
   final String name;
-  final String description;
-  final Profile owner;
+  final String? description;
+  final String? owner;
   final String? category;
   final String? image;
   final Availability availability;
@@ -13,8 +12,8 @@ class Item {
   Item({
     required this.id,
     required this.name,
-    required this.description,
-    required this.owner,
+    this.description,
+    this.owner,
     this.category,
     this.image,
     this.availability=const Availability(available: true),
@@ -24,7 +23,7 @@ class Item {
     return Item(
       name: json['name'],
       description: json['description'],
-      owner: Profile.fromJson(json['owner']),
+      owner: json['owner'],
       image: json['image'],
       category: json['category'],
       id: json['id'],
@@ -35,7 +34,7 @@ class Item {
   Map<String, dynamic> toJson() => {
         'name': name,
         'description': description,
-        'owner': owner.toJson(),
+        'owner': owner,
         'image': image,
         'category': category,
         'id': id,
