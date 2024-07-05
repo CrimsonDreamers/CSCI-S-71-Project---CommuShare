@@ -175,10 +175,16 @@ We did refined the user sories and added additional details (when needed) & acce
   - **TODO**
 - Continuous Integration: You have a Continuous Integration system running. You only work on the main/trunk/master together—there are no long-lived code branches. The CI system automatically builds your code every time you push to main/trunk/master. The CI system automatically executes all your tests every time it builds the code. You have provided evidence that your CI system exists and behaves properly. (1 point for each sentence in this rubric element)
 / 5 pts
-  - **TODO**
+  - We have the CI system in-place. [Github Actions link.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/actions)
+  - We only work on main, see our [commit history.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/commits/main/) And there are no other active branches, see [our branches.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/branches)
+  - The CI system automatically builds our code every time we merge to master. [See example.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/actions/runs/9811191618)
+  - The CI system is publicly [accessible and viewable.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/actions) And successfully can build and test.
 - Continuous Delivery: You have a Continuous Delivery system running. When the build is "green", the CD system deploys your software to a production environment ("Production"); when the build is "red", the CD system doesn't alter Production. The CD system executes additional tests of your software in Production to ensure Production is up and running successfully after deployment. You have provided evidence that your CD system exists and behaves properly.
 / 5 pts
-  - **TODO**
+  - We have the continuous delivery system running. Screenshot. **TODO**
+  - When our Github Actions finishes the build and test, it will deploy to Firebase and change the website. [Link.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/actions/runs/9811191618)
+  - When our Github Actions fails, it does not deploy to Firebase. [Link.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/actions/runs/9811153690)
+  - **TODO** does Firebase execute additional tests?
 - Sprint Retrospective: Your team conducts a Sprint Retrospective. All team members participate in the sprint retrospective. As a team, you identify at least one helpful change to improve your effectiveness together. You make a concrete plan for making that change during the next sprint. (Provide evidence. 1 point for each sentence in this rubric element.)
 / 4 pts
   - **TODO**
