@@ -148,18 +148,35 @@ We did refined the user sories and added additional details (when needed) & acce
   - The document is publicly accessible.
 - Daily Scrum: You have conducted multiple Daily Scrums. You document evidence of at least one daily scrum in your README.
 / 1 pts
-  - **TODO**
+  - We've conducted daily scrum every day. [Evidence of the July 6th daily scrum.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/blob/main/meta_assets/daily%20scrum%20july%206.jpg)
 - In your daily scrums, you discussed: as a group of Developers, what did you do in the last 24 hours that helped you meet the Sprint Goal? In your README, document which team members did which activities. (1 point for each team member's response, up to a maximum of 5 points)
 / 5 pts
-  - **TODO**
+  - For July 6th daily scrum:
+    - Teddy: we did mob programming, finished first user story.
+    - Jicheng: set-up new sprint goal, re-evaluated the PBIs.
+    - Daniel: mob programming with the team and we finished first user story, learned the Dart programming language and read through Flutter documents.
+    - Carl: did mob programming together, and learned about Firebase and other intricacies with Dart and Flutter.
+    - Mel: did mob programming together.
 - In your daily scrums, you discussed: as a group of Developers, what will you do in the next 24 hours to meet the Sprint Goal? In your README, document which team members plan to do which activities. (1 point for each team member's response, up to a maximum of 5 points)
 / 5 pts
-  - **TODO**
+  - For July 6th daily scrum:
+    - Teddy: tackle the impediment together, then work on the next user story with mob programming.
+    - Jicheng: assist our team to make us more productive, finish as many story points as we can.
+    - Daniel: continue to do mob programming to finish story points.
+    - Carl: continue to do mob programming to finish story points.
+    - Mel: tackle the impediment and fix the Firebase bug.
 - In your daily scrums, you discussed: do you see any impediment that prevents the Developers from meeting the Sprint Goal? What are the impediments? What is your impediment removal plan? (1 point for each question answered)
 / 3 pts
-  - **TODO**
+  - For July 6th daily scrum:
+    - Teddy: apparently our unit test did not properly connect to our database, so unit tests started failing.
+    - Jicheng: is sick with a stomachache.
+    - Daniel: none.
+    - Carl: none.
+    - Mel: daughter may be sick with chickenpox, so more important items are occupying her mind.
 - Every day during the sprint, update your sprint task board and burndown chart. Provide evidence (URLs or images) in your README to show that you did this. (1 point for each time you updated your tracking indicators, up to a maximum of 2 points)
 / 2 pts
+  - [Evidence of sprint burndown update July 6th.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/blob/main/meta_assets/sprint%20burndown%20july%206.png)
+  - [Evidence of sprint task board update July 6th.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/blob/main/meta_assets/sprint%20board%20july%206.png)
   - **TODO**
 - Pair- or Mob-Programming: There is evidence that you paired or mobbed on your code. The evidence could be a photo or video of your team working together, or it could be some other kind of evidence. The evidence is included in your README. (1 point for each team member who participated, up to a maximum of 5 points)
 / 5 pts
@@ -172,7 +189,10 @@ We did refined the user sories and added additional details (when needed) & acce
   - **TODO**
 - Your product increment is working software. The working software is running on a publicly accessible system (this could be a web server, a mobile app store, or something else.) Your README includes evidence that your product increment is working software. Your README includes the URL of the working software, an invitation to test the mobile app, etc. (1 point for each sentence in this rubric element)
 / 4 pts
-  - **TODO**
+  - Our product is working software, which is demonstrated by viewing the [web-app link.](https://commu-share.firebaseapp.com/)
+  - The working software is running on a publicly accessible webpage [as seen.](https://commu-share.firebaseapp.com/)
+  - The README (this document) is documenting this evidence.
+  - The URL is at the top of this README, and also in previous bullet points.
 - At least one stakeholder attends your sprint review, and you provide evidence that your stakeholder was there. You revise your product backlog based on the feedback you receive. (1 point for each sentence in this rubric item)
 / 2 pts
   - **TODO**
