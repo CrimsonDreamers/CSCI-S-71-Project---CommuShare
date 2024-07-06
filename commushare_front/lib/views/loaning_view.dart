@@ -3,10 +3,11 @@ import 'package:commushare_front/model/item.dart';
 import 'package:commushare_front/service/database.dart';
 import 'package:flutter/material.dart';
 import 'package:rflutter_alert/rflutter_alert.dart';
-import 'package:fluttertoast/fluttertoast.dart';
 
 class CreateItemView extends StatefulWidget {
-  const CreateItemView({super.key});
+  final DatabaseService databaseService;
+
+  const CreateItemView({super.key, required this.databaseService});
 
   @override
   State<CreateItemView> createState() {
@@ -15,27 +16,28 @@ class CreateItemView extends StatefulWidget {
 }
 
 class CreateItemViewState extends State<CreateItemView> {
+  late DatabaseService databaseService;
   CreateItemViewState();
-  DatabaseService databaseService = DatabaseService();
-
   String name = "";
   String description = "";
 
   @override
   void initState() {
     super.initState();
+    databaseService = widget.databaseService;
   }
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return Container(key: new Key("CreateItemView"),child :Column(
         mainAxisAlignment: MainAxisAlignment.start,
         children: <Widget>[
-          Container(height: 20,),
+          Container(
+            height: 20,
+          ),
           Row(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              
               Expanded(child: Container()),
               ElevatedButton(
                   key: const Key("back Home"),
@@ -61,7 +63,6 @@ class CreateItemViewState extends State<CreateItemView> {
               ),
             ],
           ),
-              
           Expanded(child: Container()),
           Card(
               color: mainColor,
@@ -154,13 +155,16 @@ class CreateItemViewState extends State<CreateItemView> {
                   width: MediaQuery.of(context).size.width * 0.6,
                 ),
                 ElevatedButton(
-                    key: const Key("Confirm Sign in"),
+                    key: const Key("confirm_loan_Button"),
                     style: ButtonStyle(
                         backgroundColor: WidgetStateProperty.resolveWith<Color>(
                             ((states) => Colors.white))),
-                    onPressed: () async{
+                    onPressed: () async {
                       if (name != "") {
-                        await databaseService.addItem(Item(id: "item_id", name: name, description: description));
+                        await databaseService.addItem(Item(
+                            id: "item_id",
+                            name: name,
+                            description: description));
                       }
                     },
                     child: SizedBox(
@@ -190,8 +194,6 @@ class CreateItemViewState extends State<CreateItemView> {
                             ]))),
               ])),
           Expanded(child: Container()),
-        ]);
+        ]));
   }
-
-  
 }

@@ -93,21 +93,25 @@ class _HomeState extends State<Home> {
         ),
       ),
       // This trailing comma makes auto-formatting nicer for build methods.
-      floatingActionButton: SizedBox(width: MediaQuery.of(context).size.width*0.25,child: ElevatedButton(
-                  key: const Key("add_Button"),
-                  style: ButtonStyle(
-                    backgroundColor: WidgetStateProperty.resolveWith<Color>(
-                        ((states) => mainColor)),
-                    elevation: WidgetStateProperty.resolveWith((states) => 0),
-                  ),
-                  onPressed: () {
-                    Navigator.pushNamed(context, '/loan_item');
-                  },
-                  child: const Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      FittedBox(fit: BoxFit.scaleDown,child:
-                      Text(
+      floatingActionButton: SizedBox(
+          //width: MediaQuery.of(context).size.width * 0.25,
+          child: ElevatedButton(
+              key: const Key("add_Button"),
+              style: ButtonStyle(
+                backgroundColor: WidgetStateProperty.resolveWith<Color>(
+                    ((states) => mainColor)),
+                elevation: WidgetStateProperty.resolveWith((states) => 0),
+              ),
+              onPressed: () {
+                Navigator.pushNamed(context, '/loan_item',
+                    arguments: databaseService);
+              },
+              child: const Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  FittedBox(
+                      fit: BoxFit.scaleDown,
+                      child: Text(
                         "Loan an item",
                         textAlign: TextAlign.center,
                         style: TextStyle(
@@ -115,8 +119,8 @@ class _HomeState extends State<Home> {
                           fontSize: 30,
                         ),
                       )),
-                    ],
-                  ))),
+                ],
+              ))),
     );
   }
 }

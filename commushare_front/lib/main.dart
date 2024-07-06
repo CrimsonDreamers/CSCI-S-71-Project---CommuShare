@@ -73,9 +73,10 @@ class RouteGenerator {
             });
 
       case '/loan_item':
-        return PageRouteBuilder(
+        if(settings.arguments!=null) {
+          return PageRouteBuilder(
             pageBuilder: (context, animation, secondaryAnimation) =>
-                const CreateItemView(),
+                CreateItemView(databaseService: settings.arguments as DatabaseService),
             transitionsBuilder:
                 (context, animation, secondaryAnimation, child) {
               animation =
@@ -85,6 +86,19 @@ class RouteGenerator {
                 child: child,
               );
             });
+        }else {
+        return PageRouteBuilder(
+            pageBuilder: (context, animation, secondaryAnimation) =>
+                CreateItemView(databaseService: DatabaseService()),
+            transitionsBuilder:
+                (context, animation, secondaryAnimation, child) {
+              animation =
+                  CurvedAnimation(curve: Curves.ease, parent: animation);
+              return FadeTransition(
+                opacity: animation,
+                child: child,
+              );
+            });}
 
       default:
         return MaterialPageRoute(

@@ -85,165 +85,102 @@ void main() async {
     await tester.pump();
   });
 
-  testWidgets('Ability to access Sign in page', (WidgetTester tester) async {
+  testWidgets('A button for adding items is displayed in the HomePage',
+      (WidgetTester tester) async {
+    // Build our app and trigger a frame.
+    await tester.pumpWidget(MaterialApp(
+        home: Home(
+      databaseService: mockDatabaseService,
+    )));
+
+    expect(find.byKey(const Key("add_Button")), findsOneWidget);
+  });
+
+  testWidgets('The adding button is clickable', (WidgetTester tester) async {
     // Build our app and trigger a frame.
     await tester.pumpWidget(MyApp(
       databaseService: mockDatabaseService,
     ));
 
-    expect(find.byKey(const Key("Go to Sign In")), findsOneWidget);
-    await tester.tap(find.byKey(const Key("Go to Sign In")));
+    expect(find.byKey(const Key("add_Button")), findsOneWidget);
+    await tester.tap(find.byKey(const Key("add_Button")));
     await tester.pump();
   });
 
-  testWidgets('FormFields appears in the middle of the Login Page',
+  testWidgets(
+      'The adding button is clickable and triggers the loan an item page',
       (WidgetTester tester) async {
     // Build our app and trigger a frame.
     await tester.pumpWidget(MyApp(
       databaseService: mockDatabaseService,
     ));
 
-    // Go to Sign in page
-    await tester.tap(find.byKey(const Key("Go to Sign In")));
-    // Wait for the navigation to complete
+    expect(find.byKey(const Key("add_Button")), findsOneWidget);
+    await tester.tap(find.byKey(const Key("add_Button")));
     await tester.pumpAndSettle();
 
-    // Verify that two form fields appear (Email, Password)
+    // Verify that the appearing view changed and that we are now on the creating item page
+    expect(find.byKey(new Key("CreateItemView")),
+        findsOneWidget);
+  });
+
+  testWidgets('FormFields appears in the loan an item page',
+      (WidgetTester tester) async {
+    // Build our app and trigger a frame.
+    await tester.pumpWidget(MyApp(
+      databaseService: mockDatabaseService,
+    ));
+
+    expect(find.byKey(const Key("add_Button")), findsOneWidget);
+    await tester.tap(find.byKey(const Key("add_Button")));
+    await tester.pumpAndSettle();
+
+    // Verify that the appearing view changed and that we are now on the creating item page
+    expect(find.byKey(new Key("CreateItemView")),
+        findsOneWidget);
+
+    // Verify that two form fields appear (Name, Description)
     expect(find.byWidgetPredicate((Widget widget) => widget is FormField),
         findsExactly(2));
   });
 
-  testWidgets('Sign in Confirm button exists and is clickable',
+  testWidgets('The loan an item page is clear on its purpose',
       (WidgetTester tester) async {
     // Build our app and trigger a frame.
     await tester.pumpWidget(MyApp(
       databaseService: mockDatabaseService,
     ));
 
-    // Go to Sign in page
-    await tester.tap(find.byKey(const Key("Go to Sign In")));
-    // Wait for the navigation to complete
+    expect(find.byKey(const Key("add_Button")), findsOneWidget);
+    await tester.tap(find.byKey(const Key("add_Button")));
     await tester.pumpAndSettle();
 
-    expect(find.byKey(const Key("Confirm Sign in")), findsOneWidget);
+    // Verify that the appearing view changed and that we are now on the creating item page
+    expect(find.byKey(new Key("CreateItemView")),
+        findsOneWidget);
 
-    await tester.tap(find.byKey(const Key("Confirm Sign in")));
-    await tester.pump();
+    // Verify that two form fields appear (Name, Description)
+    expect(
+        find.text(
+            "Which item do you want to make available to the community ?"),
+        findsOneWidget);
   });
 
-  testWidgets('Switch to Sign up Page', (WidgetTester tester) async {
+  testWidgets('A confirm button is displayed', (WidgetTester tester) async {
     // Build our app and trigger a frame.
     await tester.pumpWidget(MyApp(
       databaseService: mockDatabaseService,
     ));
 
-    // Go to Sign in page
-    await tester.tap(find.byKey(const Key("Go to Sign In")));
-    // Wait for the navigation to complete
+    expect(find.byKey(const Key("add_Button")), findsOneWidget);
+    await tester.tap(find.byKey(const Key("add_Button")));
     await tester.pumpAndSettle();
 
-    // Verify that one widget for signing up appears on the screen
-    expect(find.text('Sign up'), findsOneWidget);
-    //Verify that a button exist and click on it
-    expect(find.byKey(const Key("Sign up")), findsOneWidget);
-    await tester.tap(find.byKey(const Key("Sign up")));
-    await tester.pump();
+    // Verify that the appearing view changed and that we are now on the creating item page
+    expect(find.byKey(new Key("CreateItemView")),
+        findsOneWidget);
 
-    // Verify that the state changed and that we are now on the sign up page
-    expect(find.text('Sign up'), findsNothing);
-    expect(find.text('Sign in'), findsOneWidget);
-  });
-
-  testWidgets('Switch to Sign up - Card updates', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
-    await tester.pumpWidget(MyApp(
-      databaseService: mockDatabaseService,
-    ));
-
-    // Go to Sign in page
-    await tester.tap(find.byKey(const Key("Go to Sign In")));
-    // Wait for the navigation to complete
-    await tester.pumpAndSettle();
-
-    // Verify that two form fields appear (Email, Password)
-    expect(find.byWidgetPredicate((Widget widget) => widget is FormField),
-        findsExactly(2));
-
-    await tester.tap(find.byKey(const Key("Sign up")));
-    await tester.pump();
-
-    // Verify that the state changed and that we are now on the sign up page
-    expect(find.byWidgetPredicate((Widget widget) => widget is FormField),
-        findsAtLeast(3));
-  });
-
-  testWidgets('FormFields change the states of predefined variables',
-      (WidgetTester tester) async {
-    // Build our app and trigger a frame.
-    await tester.pumpWidget(MyApp(
-      databaseService: mockDatabaseService,
-    ));
-
-    // Go to Sign in page
-    await tester.tap(find.byKey(const Key("Go to Sign In")));
-    // Wait for the navigation to complete
-    await tester.pumpAndSettle();
-
-    //Go to the Register Page
-    await tester.tap(find.byKey(const Key("Sign up")));
-    await tester.pump();
-
-    expect(find.text("Welcome !"), findsOneWidget);
-
-    expect(find.byKey(const Key("Name Text Field")), findsOne);
-    await tester.enterText(find.byKey(const Key("Name Text Field")), "Joe");
-    await tester.pump();
-
-    expect(find.text("Welcome Joe!"), findsOneWidget);
-  });
-
-  testWidgets('Can\'t sign in without entering data',
-      (WidgetTester tester) async {
-    // Build our app and trigger a frame.
-    await tester.pumpWidget(MyApp(
-      databaseService: mockDatabaseService,
-    ));
-
-    // Go to Sign in page
-    await tester.tap(find.byKey(const Key("Go to Sign In")));
-    // Wait for the navigation to complete
-    await tester.pumpAndSettle();
-
-    expect(find.text("Error"), findsNothing);
-
-    expect(find.byKey(const Key("Confirm Sign in")), findsOne);
-    await tester.tap(find.byKey(const Key("Confirm Sign in")));
-    await tester.pump();
-
-    expect(find.text("Error"), findsOne);
-  });
-
-  testWidgets('I must enter valid mail address otherwise an alert is triggered',
-      (WidgetTester tester) async {
-    // Build our app and trigger a frame.
-    await tester.pumpWidget(MyApp(
-      databaseService: mockDatabaseService,
-    ));
-
-    // Go to Sign in page
-    await tester.tap(find.byKey(const Key("Go to Sign In")));
-    // Wait for the navigation to complete
-    await tester.pumpAndSettle();
-
-    expect(find.text("Error"), findsNothing);
-    expect(find.byKey(const Key("Mail Address Text Field")), findsOne);
-    await tester.enterText(
-        find.byKey(const Key("Mail Address Text Field")), "tommmm.gmail.com");
-    await tester.pump();
-
-    await tester.tap(find.byKey(const Key("Confirm Sign in")));
-    await tester.pump();
-
-    expect(find.text("Error"), findsOne);
+    // Verify that two form fields appear (Name, Description)
+    expect(find.byKey(const Key("confirm_loan_Button")), findsOneWidget);
   });
 }
