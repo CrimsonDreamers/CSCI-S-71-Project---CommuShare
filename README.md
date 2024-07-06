@@ -174,7 +174,10 @@ We did refined the user sories and added additional details (when needed) & acce
   - **TODO**
 - Your product increment is working software. The working software is running on a publicly accessible system (this could be a web server, a mobile app store, or something else.) Your README includes evidence that your product increment is working software. Your README includes the URL of the working software, an invitation to test the mobile app, etc. (1 point for each sentence in this rubric element)
 / 4 pts
-  - **TODO**
+  - Our product is working software, which is demonstrated by viewing the [web-app link.](https://commu-share.firebaseapp.com/)
+  - The working software is running on a publicly accessible webpage [as seen.](https://commu-share.firebaseapp.com/)
+  - The README (this document) is documenting this evidence.
+  - The URL is at the top of this README, and also in previous bullet points.
 - At least one stakeholder attends your sprint review, and you provide evidence that your stakeholder was there. You revise your product backlog based on the feedback you receive. (1 point for each sentence in this rubric item)
 / 2 pts
   - **TODO**
