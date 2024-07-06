@@ -1,7 +1,10 @@
+import 'package:commushare_front/service/database.dart';
+import 'package:commushare_front/views/item.dart';
 import 'package:flutter/material.dart';
 import 'package:rflutter_alert/rflutter_alert.dart';
 
 import '../constant/color.dart';
+import '../model/item.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -11,6 +14,8 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  DatabaseService databaseService = DatabaseService();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -51,70 +56,29 @@ class _HomeState extends State<Home> {
               ],
             ),
             Expanded(child: Container()),
-            SizedBox(
-              width: MediaQuery.of(context).size.width * 0.8,
-              height: 150,
-              child: Card(
-                child: Column(
-                  children: [
-                    const Text(
-                      "Pair of scissors",
-                      style: TextStyle(fontSize: 30),
-                    ),
-                    const FittedBox(
-                        fit: BoxFit.scaleDown,
-                        child: Text(
-                          "A beautiful pair of right-handed scissors",
-                          style: TextStyle(fontSize: 20),
-                        )),
-                    Expanded(child: Container()),
-                    SizedBox(
-                        width: 200,
-                        child: ElevatedButton(
-                          key: const Key("Borrow it"),
-                          style: ButtonStyle(
-                            backgroundColor:
-                                WidgetStateProperty.resolveWith<Color>(
-                                    ((states) => mainColor)),
-                            elevation:
-                                WidgetStateProperty.resolveWith((states) => 0),
-                          ),
-                          onPressed: () {
-                            Alert(
-                                context: context,
-                                title: "Let's grab it !",
-                                desc: "Go to Adams House, room 123 to get it",
-                                buttons: [
-                                  DialogButton(
-                                      color:
-                                          const Color.fromARGB(255, 18, 32, 47),
-                                      onPressed: () {
-                                        Navigator.pop(context);
-                                      },
-                                      child: const Text(
-                                        "Ok",
-                                        style: TextStyle(
-                                            color: Colors.white, fontSize: 20),
-                                      ))
-                                ]).show();
+            FutureBuilder(
+              future: databaseService.getItems(),
+              builder:
+                  (BuildContext context, AsyncSnapshot<List<Item>> snapshot) {
+                if (snapshot.connectionState == ConnectionState.waiting) {
+                  return CircularProgressIndicator();
+                } else {
+                  if (snapshot.hasError) {
+                    return Text("Error: ${snapshot.error}");
+                  } else {
+                    List<Item> items = snapshot.data!;
+                    return SizedBox(
+                        width: MediaQuery.of(context).size.width * 0.9,
+                        height: MediaQuery.of(context).size.height * 0.5,
+                        child: ListView.builder(
+                          itemCount: items.length,
+                          itemBuilder: (BuildContext context, int index) {
+                            return ItemWidget(item: items[index]);
                           },
-                          child: const FittedBox(
-                              fit: BoxFit.scaleDown,
-                              child: Text(
-                                "Borrow it",
-                                textAlign: TextAlign.center,
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 25,
-                                ),
-                              )),
-                        )),
-                    Container(
-                      height: 10,
-                    )
-                  ],
-                ),
-              ),
+                        ));
+                  }
+                }
+              },
             ),
             Expanded(child: Container()),
           ],

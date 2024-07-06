@@ -16,19 +16,21 @@ class Item {
     this.owner,
     this.category,
     this.image,
-    this.availability=const Availability(available: true),
+    this.availability = const Availability(available: true),
   });
 
   factory Item.fromJson(Map<String, dynamic> json) {
     return Item(
-      name: json['name'],
-      description: json['description'],
-      owner: json['owner'],
-      image: json['image'],
-      category: json['category'],
-      id: json['id'],
-      availability: Availability.fromJson(json['availability']),
-    );
+        name: json['name'],
+        description: json['description'] ?? "",
+        owner: json['owner'] ?? "",
+        image: json['image'] ?? "",
+        category: json['category'] ?? "",
+        id: json['id'],
+        availability: const Availability(
+            available:
+                true) // Availability.fromJson(json['availability'] ?? ""),
+        );
   }
 
   Map<String, dynamic> toJson() => {

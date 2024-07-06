@@ -39,14 +39,14 @@ class ItemWidgetState extends State<ItemWidget> {
         child: Card(
           child: Column(
             children: [
-              const Text(
-                "Pair of scissors",
+              Text(
+                item.name,
                 style: TextStyle(fontSize: 30),
               ),
               const FittedBox(
                   fit: BoxFit.scaleDown,
                   child: Text(
-                    "A beautiful pair of right-handed scissors",
+                    "Desc",
                     style: TextStyle(fontSize: 20),
                   )),
               Expanded(child: Container()),
