@@ -1,20 +1,27 @@
 import 'package:commushare_front/service/database.dart';
 import 'package:commushare_front/views/item.dart';
 import 'package:flutter/material.dart';
-import 'package:rflutter_alert/rflutter_alert.dart';
 
 import '../constant/color.dart';
 import '../model/item.dart';
 
 class Home extends StatefulWidget {
-  const Home({super.key});
+  final DatabaseService databaseService;
+
+  const Home({super.key, required this.databaseService});
 
   @override
   State<Home> createState() => _HomeState();
 }
 
 class _HomeState extends State<Home> {
-  DatabaseService databaseService = DatabaseService();
+  late DatabaseService databaseService;
+
+  @override
+  void initState() {
+    super.initState();
+    databaseService = widget.databaseService;
+  }
 
   @override
   Widget build(BuildContext context) {

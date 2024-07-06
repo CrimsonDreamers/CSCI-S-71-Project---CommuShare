@@ -1,3 +1,4 @@
+import 'package:commushare_front/service/database.dart';
 import 'package:commushare_front/views/home.dart';
 import 'package:commushare_front/views/login.dart';
 import 'package:commushare_front/views/login_wrapper.dart';
@@ -11,11 +12,15 @@ void main() async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
 
-  runApp(const MyApp());
+  runApp(MyApp(
+    databaseService: DatabaseService(),
+  ));
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  final DatabaseService databaseService;
+
+  const MyApp({super.key, required this.databaseService});
 
   // This widget is the root of your application.
   @override
@@ -29,7 +34,7 @@ class MyApp extends StatelessWidget {
         fontFamily: 'poppins',
         useMaterial3: true,
       ),
-      home: const SplashScreenWrapper(),
+      home: SplashScreenWrapper(databaseService: databaseService),
     );
   }
 }
@@ -40,8 +45,9 @@ class RouteGenerator {
       case '/':
       case '/home':
         return PageRouteBuilder(
-            pageBuilder: (context, animation, secondaryAnimation) =>
-                const Home(),
+            pageBuilder: (context, animation, secondaryAnimation) => Home(
+                  databaseService: DatabaseService(),
+                ),
             transitionsBuilder:
                 (context, animation, secondaryAnimation, child) {
               animation =

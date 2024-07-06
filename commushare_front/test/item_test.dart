@@ -13,7 +13,6 @@ import 'package:commushare_front/model/item.dart';
 void main() {
   test('Test create blank item', () {
     final testItem = Item(id: "test_id", name: "test_name");
-
     expect(testItem.id, "test_id");
     expect(testItem.name, "test_name");
   });
@@ -30,8 +29,5 @@ void main() {
     expect(listItems.last, testItem2);
 
   });
-
-  
-
 
 }

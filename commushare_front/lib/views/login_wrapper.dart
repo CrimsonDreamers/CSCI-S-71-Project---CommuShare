@@ -1,10 +1,14 @@
+import 'package:commushare_front/service/database.dart';
 import 'package:commushare_front/views/login.dart';
 import 'package:flutter/material.dart';
 
 import 'home.dart';
 
 class SplashScreenWrapper extends StatelessWidget {
-  const SplashScreenWrapper({super.key});
+  final DatabaseService databaseService;
+
+  const SplashScreenWrapper({super.key, required this.databaseService});
+
   //final cookie = document.cookie;
 
   @override
@@ -12,7 +16,9 @@ class SplashScreenWrapper extends StatelessWidget {
     if (false) {
       return const Login();
     } else {
-      return const Home();
+      return Home(
+        databaseService: databaseService,
+      );
     }
   }
 }

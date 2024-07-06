@@ -17,7 +17,6 @@ class DatabaseService {
       List<QueryDocumentSnapshot<Map<String, dynamic>>> snapshot) {
     return snapshot.map((doc) {
       return Item.fromJson(doc.data());
-      //return Item(id: "1",name: "test");
     }).toList();
   }
 }

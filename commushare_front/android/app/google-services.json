@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "960827756618",
+    "project_id": "commu-share",
+    "storage_bucket": "commu-share.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:960827756618:android:282506e33fa76519e156b3",
+        "android_client_info": {
+          "package_name": "com.example.commushare_front"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNTMlPLqP_311VGzz8vn0reO48Dq2cUl8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
