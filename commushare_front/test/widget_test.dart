@@ -7,7 +7,8 @@
 
 import 'package:commushare_front/model/item.dart';
 import 'package:commushare_front/service/database.dart';
-import 'package:flutter/material.dart';
+import 'package:commushare_front/views/home.dart';
+import 'package:commushare_front/views/loaning_view.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:commushare_front/main.dart';

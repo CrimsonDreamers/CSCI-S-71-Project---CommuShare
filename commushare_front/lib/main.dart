@@ -1,5 +1,6 @@
 import 'package:commushare_front/service/database.dart';
 import 'package:commushare_front/views/home.dart';
+import 'package:commushare_front/views/loaning_view.dart';
 import 'package:commushare_front/views/login.dart';
 import 'package:commushare_front/views/login_wrapper.dart';
 import 'package:flutter/material.dart';
@@ -61,6 +62,20 @@ class RouteGenerator {
         return PageRouteBuilder(
             pageBuilder: (context, animation, secondaryAnimation) =>
                 const Login(),
+            transitionsBuilder:
+                (context, animation, secondaryAnimation, child) {
+              animation =
+                  CurvedAnimation(curve: Curves.ease, parent: animation);
+              return FadeTransition(
+                opacity: animation,
+                child: child,
+              );
+            });
+
+      case '/loan_item':
+        return PageRouteBuilder(
+            pageBuilder: (context, animation, secondaryAnimation) =>
+                const CreateItemView(),
             transitionsBuilder:
                 (context, animation, secondaryAnimation, child) {
               animation =

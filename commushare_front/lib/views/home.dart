@@ -33,35 +33,36 @@ class _HomeState extends State<Home> {
             Container(
               height: 20,
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: [
-                ElevatedButton(
-                    key: const Key("Go to Sign In"),
-                    style: ButtonStyle(
-                      backgroundColor: WidgetStateProperty.resolveWith<Color>(
-                          ((states) => Colors.white)),
-                      elevation: WidgetStateProperty.resolveWith((states) => 0),
-                    ),
-                    onPressed: () {
-                      Navigator.pushReplacementNamed(context, '/login');
-                    },
-                    child: const Row(
-                      children: [
-                        Text(
-                          "Sign in / Register",
-                          style: TextStyle(
-                            color: mainColor,
-                            fontSize: 30,
-                          ),
-                        ),
-                      ],
-                    )),
-                Container(
-                  height: 20,
-                ),
-              ],
-            ),
+
+            // Row(
+            //   mainAxisAlignment: MainAxisAlignment.end,
+            //   children: [
+            //     ElevatedButton(
+            //         key: const Key("Go to Sign In"),
+            //         style: ButtonStyle(
+            //           backgroundColor: WidgetStateProperty.resolveWith<Color>(
+            //               ((states) => Colors.white)),
+            //           elevation: WidgetStateProperty.resolveWith((states) => 0),
+            //         ),
+            //         onPressed: () {
+            //           Navigator.pushReplacementNamed(context, '/login');
+            //         },
+            //         child: const Row(
+            //           children: [
+            //             Text(
+            //               "Sign in / Register",
+            //               style: TextStyle(
+            //                 color: mainColor,
+            //                 fontSize: 30,
+            //               ),
+            //             ),
+            //           ],
+            //         )),
+            //     Container(
+            //       height: 20,
+            //     ),
+            //   ],
+            // ),
             Expanded(child: Container()),
             FutureBuilder(
               future: databaseService.getItems(),
@@ -92,6 +93,30 @@ class _HomeState extends State<Home> {
         ),
       ),
       // This trailing comma makes auto-formatting nicer for build methods.
+      floatingActionButton: SizedBox(width: MediaQuery.of(context).size.width*0.25,child: ElevatedButton(
+                  key: const Key("add_Button"),
+                  style: ButtonStyle(
+                    backgroundColor: WidgetStateProperty.resolveWith<Color>(
+                        ((states) => mainColor)),
+                    elevation: WidgetStateProperty.resolveWith((states) => 0),
+                  ),
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/loan_item');
+                  },
+                  child: const Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      FittedBox(fit: BoxFit.scaleDown,child:
+                      Text(
+                        "Loan an item",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 30,
+                        ),
+                      )),
+                    ],
+                  ))),
     );
   }
 }

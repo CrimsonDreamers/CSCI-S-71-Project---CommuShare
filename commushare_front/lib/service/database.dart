@@ -19,4 +19,8 @@ class DatabaseService {
       return Item.fromJson(doc.data());
     }).toList();
   }
+
+  Future<void> addItem(Item item) async {
+    await ItemsCollection.add(item.toJson());
+  }
 }

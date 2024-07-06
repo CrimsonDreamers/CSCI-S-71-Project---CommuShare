@@ -41,7 +41,7 @@ class ItemWidgetState extends State<ItemWidget> {
             children: [
               Text(
                 item.name,
-                style: TextStyle(fontSize: 30),
+                style: const TextStyle(fontSize: 30),
               ),
               const FittedBox(
                   fit: BoxFit.scaleDown,
@@ -64,12 +64,14 @@ class ItemWidgetState extends State<ItemWidget> {
                     onPressed: () {
                       Alert(
                           context: context,
+                          
                           title: "Let's grab it !",
                           desc: "Go to Adams House, room 123 to get it",
                           buttons: [
                             DialogButton(
+                                key: new Key("Alert_Button"),
                                 color:
-                                    const Color.fromARGB(255, 18, 32, 47),
+                                    const Color.fromARGB(255, 19, 31, 44),
                                 onPressed: () {
                                   Navigator.pop(context);
                                 },
