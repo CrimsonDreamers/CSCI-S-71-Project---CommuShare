@@ -160,6 +160,8 @@ We did refined the user sories and added additional details (when needed) & acce
   - **TODO**
 - Every day during the sprint, update your sprint task board and burndown chart. Provide evidence (URLs or images) in your README to show that you did this. (1 point for each time you updated your tracking indicators, up to a maximum of 2 points)
 / 2 pts
+  - [Evidence of sprint burndown update July 6th.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/blob/main/meta_assets/sprint%20burndown%20july%206.png)
+  - [Evidence of sprint task board update July 6th.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/blob/main/meta_assets/sprint%20board%20july%206.png)
   - **TODO**
 - Pair- or Mob-Programming: There is evidence that you paired or mobbed on your code. The evidence could be a photo or video of your team working together, or it could be some other kind of evidence. The evidence is included in your README. (1 point for each team member who participated, up to a maximum of 5 points)
 / 5 pts
