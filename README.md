@@ -168,16 +168,18 @@ We did refined the user sories and added additional details (when needed) & acce
 - In your daily scrums, you discussed: do you see any impediment that prevents the Developers from meeting the Sprint Goal? What are the impediments? What is your impediment removal plan? (1 point for each question answered)
 / 3 pts
   - For July 6th daily scrum:
-    - Teddy: apparently our unit test did not properly connect to our database, so unit tests started failing.
-    - Jicheng: is sick with a stomachache.
-    - Daniel: none.
-    - Carl: none.
-    - Mel: daughter may be sick with chickenpox, so more important items are occupying her mind.
+    - Do you see any impediments?
+        - Yes
+    - What are the impediments:
+        - Apparently our unit test did not properly connect to our database, so unit tests started failing.
+    - What is your impediment removal plan?
+        - Have all devs do mob programming and prioritize fixing the testing issue, before adding any new features.
 - Every day during the sprint, update your sprint task board and burndown chart. Provide evidence (URLs or images) in your README to show that you did this. (1 point for each time you updated your tracking indicators, up to a maximum of 2 points)
 / 2 pts
   - [Evidence of sprint burndown update July 6th.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/blob/main/meta_assets/sprint%20burndown%20july%206.png)
   - [Evidence of sprint task board update July 6th.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/blob/main/meta_assets/sprint%20board%20july%206.png)
-  - **TODO**
+  - Evidence of sprint burndown update July 7th. **TODO**
+  - Evidence of sprint task board update July 7th. **TODO**
 - Pair- or Mob-Programming: There is evidence that you paired or mobbed on your code. The evidence could be a photo or video of your team working together, or it could be some other kind of evidence. The evidence is included in your README. (1 point for each team member who participated, up to a maximum of 5 points)
 / 5 pts
   - All five of us rotated as driver for mob programming. [Photo evidence.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/blob/main/meta_assets/mob%20programming%20sprint%202.jpg)
