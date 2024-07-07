@@ -81,7 +81,7 @@ class _HomeState extends State<Home> {
                         child: ListView.builder(
                           itemCount: items.length,
                           itemBuilder: (BuildContext context, int index) {
-                            return ItemWidget(item: items[index]);
+                            return ItemWidget(item: items[index], databaseService: databaseService,);
                           },
                         ));
                   }

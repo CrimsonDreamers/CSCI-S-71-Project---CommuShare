@@ -11,20 +11,24 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:commushare_front/model/item.dart';
 
+import 'widget_test.mocks.dart';
+
 
 
 void main() {
-final testItem = Item(id: "test_id", name: "test_name");
+  final testItem = Item(id: "test_id", name: "test_name");
+  final mockDatabaseService = MockDatabaseService();
+
   testWidgets('item widget build properly',
       (WidgetTester tester) async {
     // Show one item
-    await tester.pumpWidget(ItemWidget(item: testItem,));
+    await tester.pumpWidget(ItemWidget(item: testItem, databaseService: mockDatabaseService,));
   });
 
   testWidgets('test borrow button exists',
       (WidgetTester tester) async {
     // Show one item
-    await tester.pumpWidget(ItemWidget(item: testItem,));
+    await tester.pumpWidget(ItemWidget(item: testItem, databaseService: mockDatabaseService,));
     
     expect(find.text("Borrow it"), findsOneWidget);
   });
@@ -32,7 +36,7 @@ final testItem = Item(id: "test_id", name: "test_name");
   testWidgets('borrow button clickable',
       (WidgetTester tester) async {
     // Show one item
-    await tester.pumpWidget(MaterialApp(home: Scaffold(body: ItemWidget(item: testItem,))));
+    await tester.pumpWidget(MaterialApp(home: Scaffold(body: ItemWidget(item: testItem, databaseService: mockDatabaseService,))));
     await tester.tap(find.byKey(const Key("Borrow it")));
   
   });
@@ -40,7 +44,7 @@ final testItem = Item(id: "test_id", name: "test_name");
   testWidgets('Window appears after clicking borrow',
       (WidgetTester tester) async {
     // Show one item
-    await tester.pumpWidget(MaterialApp(home: Scaffold(body: ItemWidget(item: testItem,))));
+    await tester.pumpWidget(MaterialApp(home: Scaffold(body: ItemWidget(item: testItem, databaseService: mockDatabaseService,))));
     await tester.tap(find.text("Borrow it"));
 
     // Wait for the navigation to complete 
@@ -54,7 +58,7 @@ final testItem = Item(id: "test_id", name: "test_name");
   testWidgets('there is no return button on available items',
       (WidgetTester tester) async {
     // Show one available item
-    await tester.pumpWidget(MaterialApp(home: Scaffold(body: ItemWidget(item: testItem,))));
+    await tester.pumpWidget(MaterialApp(home: Scaffold(body: ItemWidget(item: testItem, databaseService: mockDatabaseService,))));
     expect(find.byKey(const Key("Return")), findsNothing);
   });
 
@@ -63,7 +67,7 @@ final testItem = Item(id: "test_id", name: "test_name");
     final testItemUnavailable = Item(id: "test_id", name: "test_name", availability: const Availability(available: false));
 
     // Show one unavailable item
-    await tester.pumpWidget(MaterialApp(home: Scaffold(body: ItemWidget(item: testItemUnavailable,))));
+    await tester.pumpWidget(MaterialApp(home: Scaffold(body: ItemWidget(item: testItemUnavailable, databaseService: mockDatabaseService,))));
     expect(find.byKey(const Key("Return")), findsOneWidget);
   });
 

@@ -22,10 +22,10 @@ class DatabaseService {
   }
 
   Future<void> addItem(Item item) async {
-    await ItemsCollection.add(item.toJson());
+    await ItemsCollection.doc(item.id).set(item.toJson());
   }
 
   Future<void> setItemAvailability(Item item, Availability availability) async {
-    await ItemsCollection.doc(item.id).set({"availability": availability.toJson()});
+    await ItemsCollection.doc(item.id).set({"availability": availability.toJson()}, SetOptions(merge: true));
   }
 }

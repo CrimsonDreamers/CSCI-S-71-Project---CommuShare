@@ -8,7 +8,6 @@
 import 'package:commushare_front/model/item.dart';
 import 'package:commushare_front/service/database.dart';
 import 'package:commushare_front/views/home.dart';
-import 'package:commushare_front/views/loaning_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
@@ -120,7 +119,7 @@ void main() async {
     await tester.pumpAndSettle();
 
     // Verify that the appearing view changed and that we are now on the creating item page
-    expect(find.byKey(new Key("CreateItemView")),
+    expect(find.byKey(const Key("CreateItemView")),
         findsOneWidget);
   });
 
@@ -136,7 +135,7 @@ void main() async {
     await tester.pumpAndSettle();
 
     // Verify that the appearing view changed and that we are now on the creating item page
-    expect(find.byKey(new Key("CreateItemView")),
+    expect(find.byKey(const Key("CreateItemView")),
         findsOneWidget);
 
     // Verify that two form fields appear (Name, Description)
@@ -156,7 +155,7 @@ void main() async {
     await tester.pumpAndSettle();
 
     // Verify that the appearing view changed and that we are now on the creating item page
-    expect(find.byKey(new Key("CreateItemView")),
+    expect(find.byKey(const Key("CreateItemView")),
         findsOneWidget);
 
     // Verify that two form fields appear (Name, Description)
@@ -177,7 +176,7 @@ void main() async {
     await tester.pumpAndSettle();
 
     // Verify that the appearing view changed and that we are now on the creating item page
-    expect(find.byKey(new Key("CreateItemView")),
+    expect(find.byKey(const Key("CreateItemView")),
         findsOneWidget);
 
     // Verify that two form fields appear (Name, Description)

@@ -15,10 +15,10 @@ class Availability {
 
   factory Availability.fromJson(Map<String, dynamic> json) {
     return Availability(
-      available: json['available'] ?? "",
-      borrower: Profile.fromJson(json['borrower'] ?? ""),
-      startDate: DateTime.parse(json['startDate'] ?? ""),
-      endDate: DateTime.parse(json['endDate'] ?? ""),
+      available: json['available'] ?? true,
+      //borrower: Profile.fromJson(json['borrower'] ?? ""),
+      //startDate: DateTime.parse(json['startDate'] ?? ""),
+      //endDate: DateTime.parse(json['endDate'] ?? ""),
     );
   }
 
