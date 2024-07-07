@@ -94,7 +94,7 @@ class _HomeState extends State<Home> {
       ),
       // This trailing comma makes auto-formatting nicer for build methods.
       floatingActionButton: SizedBox(
-          //width: MediaQuery.of(context).size.width * 0.25,
+          width: MediaQuery.of(context).size.width * 0.33,
           child: ElevatedButton(
               key: const Key("add_Button"),
               style: ButtonStyle(
@@ -106,7 +106,7 @@ class _HomeState extends State<Home> {
                 Navigator.pushNamed(context, '/loan_item',
                     arguments: databaseService);
               },
-              child: const Row(
+              child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   FittedBox(
@@ -114,10 +114,16 @@ class _HomeState extends State<Home> {
                       child: Text(
                         "Loan an item",
                         textAlign: TextAlign.center,
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 30,
-                        ),
+                        style: MediaQuery.of(context).size.width > 1200
+                            ? const TextStyle(color: Colors.white, fontSize: 30)
+                            : MediaQuery.of(context).size.width > 800
+                                ? const TextStyle(
+                                    color: Colors.white, fontSize: 20)
+                                : MediaQuery.of(context).size.width > 600
+                                    ? const TextStyle(
+                                        color: Colors.white, fontSize: 15)
+                                    : const TextStyle(
+                                        color: Colors.white, fontSize: 10),
                       )),
                 ],
               ))),
