@@ -2,6 +2,7 @@ import 'package:commushare_front/constant/color.dart';
 import 'package:commushare_front/model/item.dart';
 import 'package:commushare_front/service/database.dart';
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:rflutter_alert/rflutter_alert.dart';
 
 class CreateItemView extends StatefulWidget {
@@ -165,6 +166,15 @@ class CreateItemViewState extends State<CreateItemView> {
                             id: "item_id",
                             name: name,
                             description: description));
+                        Fluttertoast.showToast(
+                            msg: "Item added successfully",
+                            toastLength: Toast.LENGTH_SHORT,
+                            gravity: ToastGravity.BOTTOM,
+                            timeInSecForIosWeb: 1,
+                            backgroundColor: mainColor,
+                            textColor: Colors.white,
+                            fontSize: 16.0);
+                        Navigator.pushNamed(context, '/home');
                       }
                     },
                     child: SizedBox(
