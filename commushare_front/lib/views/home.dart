@@ -69,7 +69,7 @@ class _HomeState extends State<Home> {
               builder:
                   (BuildContext context, AsyncSnapshot<List<Item>> snapshot) {
                 if (snapshot.connectionState == ConnectionState.waiting) {
-                  return CircularProgressIndicator();
+                  return const CircularProgressIndicator();
                 } else {
                   if (snapshot.hasError) {
                     return Text("Error: ${snapshot.error}");

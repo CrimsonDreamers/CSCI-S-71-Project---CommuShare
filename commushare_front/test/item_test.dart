@@ -5,6 +5,7 @@
 // gestures. You can also use WidgetTester to find child widgets in the widget
 // tree, read text, and verify that the values of widget properties are correct.
 
+import 'package:commushare_front/model/availability.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:commushare_front/model/item.dart';
 
@@ -30,4 +31,19 @@ void main() {
 
   });
 
+  test('Test status of item exist', () {
+    final testItem = Item(id: "test_id", name: "test_name");
+    
+    var availability = testItem.availability;
+    expect(availability, isNotNull);
+  });
+
+  test('Test type and default of availability of item', () {
+    final testItem = Item(id: "test_id", name: "test_name");
+    
+    var availability = testItem.availability;
+    expect(availability, const Availability(available: true));
+  });
+
+  
 }

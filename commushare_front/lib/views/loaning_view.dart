@@ -3,7 +3,7 @@ import 'package:commushare_front/model/item.dart';
 import 'package:commushare_front/service/database.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:rflutter_alert/rflutter_alert.dart';
+import 'package:uuid/uuid.dart';
 
 class CreateItemView extends StatefulWidget {
   final DatabaseService databaseService;
@@ -30,7 +30,7 @@ class CreateItemViewState extends State<CreateItemView> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(key: new Key("CreateItemView"),child :Column(
+    return Container(key: const Key("CreateItemView"),child :Column(
         mainAxisAlignment: MainAxisAlignment.start,
         children: <Widget>[
           Container(
@@ -163,7 +163,7 @@ class CreateItemViewState extends State<CreateItemView> {
                     onPressed: () async {
                       if (name != "") {
                         await databaseService.addItem(Item(
-                            id: "item_id",
+                            id: const Uuid().v4(),
                             name: name,
                             description: description));
                         Fluttertoast.showToast(
@@ -174,6 +174,7 @@ class CreateItemViewState extends State<CreateItemView> {
                             backgroundColor: mainColor,
                             textColor: Colors.white,
                             fontSize: 16.0);
+                        // ignore: use_build_context_synchronously
                         Navigator.pushNamed(context, '/home');
                       }
                     },

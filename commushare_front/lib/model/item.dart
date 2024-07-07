@@ -34,12 +34,16 @@ class Item {
   }
 
   Map<String, dynamic> toJson() => {
-        'name': name,
-        'description': description,
-        'owner': owner,
-        'image': image,
-        'category': category,
-        'id': id,
-        'availability': availability.toJson(),
-      };
+    'name': name,
+    'description': description,
+    'owner': owner,
+    'image': image,
+    'category': category,
+    'id': id,
+    'availability': availability.toJson(),
+  };
+
+  void setAvailability(Availability availability) {
+    
+  }
 }

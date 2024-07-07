@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:commushare_front/model/availability.dart';
 
 import '../model/item.dart';
 
@@ -22,5 +23,9 @@ class DatabaseService {
 
   Future<void> addItem(Item item) async {
     await ItemsCollection.add(item.toJson());
+  }
+
+  Future<void> setItemAvailability(Item item, Availability availability) async {
+    await ItemsCollection.doc(item.id).set({"availability": availability.toJson()});
   }
 }

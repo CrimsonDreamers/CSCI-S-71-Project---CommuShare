@@ -5,6 +5,7 @@
 // gestures. You can also use WidgetTester to find child widgets in the widget
 // tree, read text, and verify that the values of widget properties are correct.
 
+import 'package:commushare_front/model/availability.dart';
 import 'package:commushare_front/views/item.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
@@ -16,13 +17,13 @@ void main() {
 final testItem = Item(id: "test_id", name: "test_name");
   testWidgets('item widget build properly',
       (WidgetTester tester) async {
-    // Build our app and trigger a frame.
+    // Show one item
     await tester.pumpWidget(ItemWidget(item: testItem,));
   });
 
   testWidgets('test borrow button exists',
       (WidgetTester tester) async {
-    // Build our app and trigger a frame.
+    // Show one item
     await tester.pumpWidget(ItemWidget(item: testItem,));
     
     expect(find.text("Borrow it"), findsOneWidget);
@@ -30,7 +31,7 @@ final testItem = Item(id: "test_id", name: "test_name");
 
   testWidgets('borrow button clickable',
       (WidgetTester tester) async {
-    // Build our app and trigger a frame.
+    // Show one item
     await tester.pumpWidget(MaterialApp(home: Scaffold(body: ItemWidget(item: testItem,))));
     await tester.tap(find.byKey(const Key("Borrow it")));
   
@@ -38,7 +39,7 @@ final testItem = Item(id: "test_id", name: "test_name");
 
   testWidgets('Window appears after clicking borrow',
       (WidgetTester tester) async {
-    // Build our app and trigger a frame.
+    // Show one item
     await tester.pumpWidget(MaterialApp(home: Scaffold(body: ItemWidget(item: testItem,))));
     await tester.tap(find.text("Borrow it"));
 
@@ -47,10 +48,23 @@ final testItem = Item(id: "test_id", name: "test_name");
 
     //expect(find.byWidgetPredicate((Widget widget) => widget is Alert),
      //   findsOneWidget);
-     expect(find.byKey(new Key("Alert_Button")), findsOneWidget);
+     expect(find.byKey(const Key("Alert_Button")), findsOneWidget);
   });
 
-  
+  testWidgets('there is no return button on available items',
+      (WidgetTester tester) async {
+    // Show one available item
+    await tester.pumpWidget(MaterialApp(home: Scaffold(body: ItemWidget(item: testItem,))));
+    expect(find.byKey(const Key("Return")), findsNothing);
+  });
 
+  testWidgets('there is a return button on unavailable items',
+      (WidgetTester tester) async {
+    final testItemUnavailable = Item(id: "test_id", name: "test_name", availability: const Availability(available: false));
+
+    // Show one unavailable item
+    await tester.pumpWidget(MaterialApp(home: Scaffold(body: ItemWidget(item: testItemUnavailable,))));
+    expect(find.byKey(const Key("Return")), findsOneWidget);
+  });
 
 }

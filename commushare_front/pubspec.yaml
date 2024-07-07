@@ -41,6 +41,7 @@ dependencies:
   mockito: ^5.4.4
   cloud_firestore: ^5.0.2
   fake_cloud_firestore: ^3.0.1
+  uuid: ^3.0.6
 
 dev_dependencies:
   flutter_test:
