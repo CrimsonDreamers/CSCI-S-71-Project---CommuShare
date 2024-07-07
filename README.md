@@ -207,7 +207,7 @@ We did refined the user sories and added additional details (when needed) & acce
   - We have the continuous delivery system running, which is deployed by Github Actions. [Screenshot.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/blob/main/meta_assets/continuous%20delivery.png)
   - When our Github Actions finishes the build and test, it will deploy to Firebase and change the website. [Link.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/actions/runs/9811191618)
   - When our Github Actions fails, it does not deploy to Firebase. [Link.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/actions/runs/9811153690)
-  - **TODO** does Firebase execute additional tests?
+  - GitHub Actions executes additional tests before deploying to Firebase production. [Link.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/actions/runs/9827761033/job/27130838523#step:4:58)
 - Sprint Retrospective: Your team conducts a Sprint Retrospective. All team members participate in the sprint retrospective. As a team, you identify at least one helpful change to improve your effectiveness together. You make a concrete plan for making that change during the next sprint. (Provide evidence. 1 point for each sentence in this rubric element.)
 / 4 pts
   - **TODO**
