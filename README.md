@@ -189,7 +189,8 @@ We did refined the user sories and added additional details (when needed) & acce
   - Six new tests for Item widget [here.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/blob/main/commushare_front/test/item_widget_test.dart)
 - Sprint Review: Your team conducts a Sprint Review.
 / 1 pts
-  - **TODO**
+  - Our team conducted our Sprint Review on the morning of July 8th. **TODO do it**
+  - Please see [Miro board](https://miro.com/app/board/uXjVK1Rl7ig=/) for details.
 - Your product increment is working software. The working software is running on a publicly accessible system (this could be a web server, a mobile app store, or something else.) Your README includes evidence that your product increment is working software. Your README includes the URL of the working software, an invitation to test the mobile app, etc. (1 point for each sentence in this rubric element)
 / 4 pts
   - Our product is working software, which is demonstrated by viewing the [web-app link.](https://commu-share.firebaseapp.com/)
@@ -198,7 +199,8 @@ We did refined the user sories and added additional details (when needed) & acce
   - The URL is at the top of this README, and also in previous bullet points.
 - At least one stakeholder attends your sprint review, and you provide evidence that your stakeholder was there. You revise your product backlog based on the feedback you receive. (1 point for each sentence in this rubric item)
 / 2 pts
-  - **TODO**
+  - Our stakeholder Price attended our Sprint Review. Photo. **TODO add photo**
+  - We've revised our product backlog based on the feedback received, **TODO**
 - Continuous Integration: You have a Continuous Integration system running. You only work on the main/trunk/master together—there are no long-lived code branches. The CI system automatically builds your code every time you push to main/trunk/master. The CI system automatically executes all your tests every time it builds the code. You have provided evidence that your CI system exists and behaves properly. (1 point for each sentence in this rubric element)
 / 5 pts
   - We have the CI system in-place. [Github Actions link.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/actions)
@@ -213,7 +215,10 @@ We did refined the user sories and added additional details (when needed) & acce
   - GitHub Actions executes additional tests before deploying to Firebase production. [Link.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/actions/runs/9827761033/job/27130838523#step:4:58)
 - Sprint Retrospective: Your team conducts a Sprint Retrospective. All team members participate in the sprint retrospective. As a team, you identify at least one helpful change to improve your effectiveness together. You make a concrete plan for making that change during the next sprint. (Provide evidence. 1 point for each sentence in this rubric element.)
 / 4 pts
-  - **TODO**
+  - Our team conducted our Sprint Retrospective on the morning of July 8th. [Miro board.](https://miro.com/app/board/uXjVK1Rl7ig=/) **TODO do it**
+  - All members participated in the retrospective. **TODO PHOTO**
+  - We've identified at least one helpful change to improve our effectiveness. **TODO add change**
+  - We made a concrete plan for making that change during the next sprint. **TODO**
 - All of the PBIs in your product backlog are true user stories.
 / 5 pts
   - All of our PBIs are confirmed to be true user stories, after changing them and refining them last sprint.
