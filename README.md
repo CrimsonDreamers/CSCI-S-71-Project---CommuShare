@@ -228,3 +228,92 @@ We did refined the user sories and added additional details (when needed) & acce
 / 5 pts
   - All of our PBIs are confirmed to be true user stories, after changing them and refining them last sprint.
   - See [Miro board.](https://miro.com/app/board/uXjVK1Rl7ig=/?share_link_id=75783264934)
+
+### Project Part 4 - Final Sprint
+- Sprint Planning: You have a forecast of how many story points your team can complete during the sprint. The forecast is documented in your README.
+/ 1 pts
+  - **TODO**
+- The rationale for your forecast is documented in your README.
+/ 1 pts
+  - **TODO**
+- You pulled stories into your sprint backlog. You pulled stories from the top of your product backlog. The aggregate size of the stories does not exceed your forecast. Developers participated in this activity (and in your project README, you made a statement or provided evidence that only Developers participated in this activity). (1 point for each item)
+/ 4 pts
+  - **TODO**
+- All of the stories in your sprint backlog are the right size: the size of each backlog item is less than half your forecast velocity for the sprint. If you noticed PBIs that are too large to get done in a sprint, you refined them by splitting them into smaller stories and estimating the smaller stories.
+/ 1 pts
+  - **TODO**
+- You decomposed user stories into developer tasks (1 point). The tasks are clearly listed in your sprint backlog (1 point).
+/ 2 pts
+  - **TODO**
+- Your sprint backlog, including both the user stories and developer tasks, is represented in a kanban board (1 point). The URL of the kanban board is documented in your README (1 point). Course staff can view the kanban board (1 point).
+/ 3 pts
+  - **TODO**
+- You have a sprint burndown chart. On the x-axis, you display time markers in units of 1 day. On the y-axis, you display story points remaining to get done. There is a linear curve descending from left to right; the leftmost point of the curve is number of story points in your sprint at sprint day 1; the rightmost point is 0 story points remaining on the last day of the sprint. The burndown chart, or the URL of the burndown chart, is document in your README. Course staff can view the burndown chart. (1 point for each sentence you complete)
+/ 6 pts
+  - **TODO**
+- Daily Scrum: You have conducted multiple Daily Scrums. You document evidence of at least one daily scrum in your README.
+/ 1 pts
+  - **TODO**
+- In your daily scrums, you discussed: as a group of Developers, what did you do in the last 24 hours that helped you meet the Sprint Goal? In your README, document which team members did which activities. (1 point for each team member's response, up to a maximum of 5 points)
+/ 5 pts
+  - **TODO**
+- In your daily scrums, you discussed: as a group of Developers, what will you do in the next 24 hours to meet the Sprint Goal? In your README, document which team members plan to do which activities. (1 point for each team member's response, up to a maximum of 5 points)
+/ 5 pts
+  - **TODO**
+- In your daily scrums, you discussed: do you see any impediment that prevents the Developers from meeting the Sprint Goal? What are the impediments? What is your impediment removal plan? (1 point for each question answered)
+/ 3 pts
+  - **TODO**
+- Every day during the sprint, update your sprint task board and burndown chart. Provide evidence (URLs or images) in your README to show that you did this. (1 point for each time you updated your tracking indicators, up to a maximum of 2 points)
+/ 2 pts
+  - **TODO**
+- Pair- or Mob-Programming: There is evidence that you paired or mobbed on your code. The evidence could be a photo or video of your team working together, or it could be some other kind of evidence. The evidence is included in your README. (1 point for each team member who participated, up to a maximum of 5 points)
+/ 5 pts
+  - **TODO**
+- Test-Driven Development: There is evidence that you are building your product test-first. There is at least 1 BDD/A-TDD test in your test suite, and it passes. There are at least 30 micro-scale unit tests in your test suite, and they all pass. (1 point for the BDD test. 1 point for each *new* unit test that you created in this sprint, up to a maximum of 10 points)
+/ 11 pts
+  - **TODO**
+- Continuous Integration: You have a Continuous Integration system running. You only work on the main/trunk/master together—there are no long-lived code branches. The CI system automatically builds your code every time you push to main/trunk/master. The CI system automatically executes all your tests every time it builds the code. You have provided evidence that your CI system exists and behaves properly. (1 point for each sentence in this rubric element)
+/ 5 pts
+  - **TODO**
+- Continuous Delivery: You have a Continuous Delivery system running. When the build is "green", the CD system deploys your software to a production environment ("Production"); when the build is "red", the CD system doesn't alter Production. The CD system executes additional tests of your software in Production to ensure Production is up and running successfully after deployment. You have provided evidence that your CD system exists and behaves properly.
+/ 5 pts
+  - **TODO**
+- Sprint Retrospective: Your team conducts a Sprint Retrospective. All team members participate in the sprint retrospective. As a team, you identify at least one helpful change to improve your effectiveness together. You make a concrete plan for making that change during the next sprint. (Provide evidence. 1 point for each sentence in this rubric element.)
+/ 4 pts
+  - **TODO**
+- Your team conducts an in-class Sprint Review.
+/ 1 pts
+  - **TODO**
+- Your in-class sprint review is at most 10 minutes long.
+/ 1 pts
+  - **TODO**
+- Your Scrum Master facilitates as needed: keeps track of time, prompts your PO and Developers at the right moments, etc.
+/ 2 pts
+  - **TODO**
+- Your PO begins the sprint review by stating its purpose. You welcome your stakeholders to the event, tell them how grateful you are for their participation, and that you're eager to hear their feedback after you show them the product increment.
+/ 4 pts
+  - **TODO**
+- Your Product Owner explains your product's far vision and near vision. You use big visible information radiators (e.g., posters or a slide deck) to facilitate your stakeholders' ability to follow along.
+/ 3 pts
+  - **TODO**
+- Your PO describes your stakeholders and user personas. You use big visible information radiators (e.g., posters or a slide deck) to facilitate your stakeholders' ability to follow along.
+/ 5 pts
+  - **TODO**
+- Your Developers demonstrate your product increment. You demonstrate each product backlog item that you completed. You use big visible information radiators (e.g., your sprint backlog with details of the user stories) to facilitate your stakeholders' ability to follow along. Your product increment is working software.
+/ 4 pts
+  - **TODO**
+- Your PO solicits feedback from your stakeholders (using class attendees as stand-ins). You ask them what they would like the next product increment to contain, now that they've seen this increment. You revise your product backlog based on the feedback you receive.
+/ 3 pts
+  - **TODO**
+- Your PO shares future plans for your product.
+/ 1 pts
+  - **TODO**
+- Your PO wraps up the sprint review with a forecast of what you might deliver in the next sprint (pretend there will be a next sprint), a brief summary of this sprint review, and a message of gratitude to your Scrum team and stakeholders.
+/ 3 pts
+  - **TODO**
+- You rehearsed your sprint review at least once before the event.
+/ 1 pts
+  - **TODO**
+- All of the PBIs in your product backlog are true user stories.
+/ 5 pts
+  - **TODO**
