@@ -185,7 +185,8 @@ We did refined the user sories and added additional details (when needed) & acce
   - All five of us rotated as driver for mob programming. [Photo evidence.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/blob/main/meta_assets/mob%20programming%20sprint%202.jpg)
 - Test-Driven Development: There is evidence that you are building your product test-first. There are at least 20 micro-scale unit tests in your test suite, and they all pass. (1 point for each *new* unit test that you created in this sprint, up to a maximum of 10 points)
 / 10 pts
-  - **TODO**
+  - Four new tests for Item object [here.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/blob/main/commushare_front/test/item_test.dart)
+  - Six new tests for Item widget [here.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/blob/main/commushare_front/test/item_widget_test.dart)
 - Sprint Review: Your team conducts a Sprint Review.
 / 1 pts
   - **TODO**
