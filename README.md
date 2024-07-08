@@ -150,6 +150,7 @@ We did refined the user sories and added additional details (when needed) & acce
 - Daily Scrum: You have conducted multiple Daily Scrums. You document evidence of at least one daily scrum in your README.
 / 1 pts
   - We've conducted daily scrum every day. [Evidence of the July 6th daily scrum.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/blob/main/meta_assets/daily%20scrum%20july%206.jpg)
+  - The team had a conversation on how we can improve for the next day.
 - In your daily scrums, you discussed: as a group of Developers, what did you do in the last 24 hours that helped you meet the Sprint Goal? In your README, document which team members did which activities. (1 point for each team member's response, up to a maximum of 5 points)
 / 5 pts
   - For July 6th daily scrum:
@@ -158,6 +159,7 @@ We did refined the user sories and added additional details (when needed) & acce
     - Daniel: mob programming with the team and we finished first user story, learned the Dart programming language and read through Flutter documents.
     - Carl: did mob programming together, and learned about Firebase and other intricacies with Dart and Flutter.
     - Mel: did mob programming together.
+  - The team had a conversation on what we did in the last 24 hours towards the sprint goal.
 - In your daily scrums, you discussed: as a group of Developers, what will you do in the next 24 hours to meet the Sprint Goal? In your README, document which team members plan to do which activities. (1 point for each team member's response, up to a maximum of 5 points)
 / 5 pts
   - For July 6th daily scrum:
@@ -166,9 +168,11 @@ We did refined the user sories and added additional details (when needed) & acce
     - Daniel: continue to do mob programming to finish story points.
     - Carl: continue to do mob programming to finish story points.
     - Mel: tackle the impediment and fix the Firebase bug.
+  - The team had a conversation on what we can do together in the next 24 hours to meet the sprint goal.
 - In your daily scrums, you discussed: do you see any impediment that prevents the Developers from meeting the Sprint Goal? What are the impediments? What is your impediment removal plan? (1 point for each question answered)
 / 3 pts
   - For July 6th daily scrum:
+    - The team had a conversation on how we can improve for the next day.
     - Do you see any impediments?
         - Yes
     - What are the impediments:
