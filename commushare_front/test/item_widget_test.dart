@@ -70,5 +70,4 @@ void main() {
     await tester.pumpWidget(MaterialApp(home: Scaffold(body: ItemWidget(item: testItemUnavailable, databaseService: mockDatabaseService,))));
     expect(find.byKey(const Key("Return")), findsOneWidget);
   });
-
 }

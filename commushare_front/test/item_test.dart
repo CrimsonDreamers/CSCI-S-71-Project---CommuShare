@@ -45,5 +45,27 @@ void main() {
     expect(availability, const Availability(available: true));
   });
 
-  
+  test('Test there is a default location with an item', () {
+    final testItem = Item(id: "test_id", name: "test_name");
+    expect(testItem.location, isNotNull);
+    expect(testItem.location, "Harvard Yard");
+  });
+
+  test('Test can be a set location with an item', () {
+    final testItem = Item(id: "test_id", name: "test_name", location: "test_location");
+    expect(testItem.location, isNotNull);
+    expect(testItem.location, "test_location");
+  });
+
+  test('Test there is a default owner name with an item', () {
+    final testItem = Item(id: "test_id", name: "test_name");
+    expect(testItem.owner, isNotNull);
+    expect(testItem.owner, "Harvard University");
+  });
+
+  test('Test can be a set owner name with an item', () {
+    final testItem = Item(id: "test_id", name: "test_name", owner: "test_owner");
+    expect(testItem.owner, isNotNull);
+    expect(testItem.owner, "test_owner");
+  });
 }

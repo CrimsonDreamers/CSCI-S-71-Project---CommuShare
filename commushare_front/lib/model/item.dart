@@ -3,8 +3,9 @@ import 'package:commushare_front/model/availability.dart';
 class Item {
   final String id;
   final String name;
+  final String location;
   final String? description;
-  final String? owner;
+  final String owner;
   final String? category;
   final String? image;
   final Availability availability;
@@ -12,8 +13,9 @@ class Item {
   Item({
     required this.id,
     required this.name,
+    this.location = "Harvard Yard",
     this.description,
-    this.owner,
+    this.owner = "Harvard University",
     this.category,
     this.image,
     this.availability = const Availability(available: true),
