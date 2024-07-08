@@ -204,7 +204,7 @@ We did refined the user sories and added additional details (when needed) & acce
   - The URL is at the top of this README, and also in previous bullet points.
 - At least one stakeholder attends your sprint review, and you provide evidence that your stakeholder was there. You revise your product backlog based on the feedback you receive. (1 point for each sentence in this rubric item)
 / 2 pts
-  - Our stakeholder Price attended our Sprint Review. Photo. **TODO add photo**
+  - Our stakeholder Price attended our Sprint Review. [Photo.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/blob/main/meta_assets/sprint%20review%20stakeholder%20july%208.jpg)
   - We've revised our product backlog based on the feedback received.
 - Continuous Integration: You have a Continuous Integration system running. You only work on the main/trunk/master together—there are no long-lived code branches. The CI system automatically builds your code every time you push to main/trunk/master. The CI system automatically executes all your tests every time it builds the code. You have provided evidence that your CI system exists and behaves properly. (1 point for each sentence in this rubric element)
 / 5 pts
