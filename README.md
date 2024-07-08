@@ -7,10 +7,11 @@ CommuShare is a web-app platform that allows helpful neighbors to share extra it
 CommuShare is ONLINE: https://commu-share.firebaseapp.com/
 
 #### Miro Boards
+We have decided to use Miro to facilitate conversation and collaboration.\
 [Miro board project planning](https://miro.com/app/board/uXjVK3SfOu8=/?share_link_id=510488792723)\
 [Miro board sprint 1](https://miro.com/app/board/uXjVK2OVZ-c=/)\
 [Miro board sprint 2](https://miro.com/app/board/uXjVK1Rl7ig=/)\
-We have decided to use Miro to facilitate conversation and collaboration
+[Miro board sprint 3](https://miro.com/app/board/uXjVK03o7j4=/)
 
 #### Product Owner
 Jicheng Zhou
