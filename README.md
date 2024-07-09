@@ -270,23 +270,26 @@ We did refined the user sories and added additional details (when needed) & acce
   - **TODO**
 - In your daily scrums, you discussed: as a group of Developers, what did you do in the last 24 hours that helped you meet the Sprint Goal? In your README, document which team members did which activities. (1 point for each team member's response, up to a maximum of 5 points)
 / 5 pts
-  - July 9th Daily Scrum **TODO**
-    - Teddy
-    - Mel
-    - Daniel
-    - Jicheng
-    - Carl
+  - July 9th Daily Scrum
+    - Teddy: finished last sprint and did review/retro, added more details to the PBIs.
+    - Mel: add more details to PBIs for our stakeholders.
+    - Daniel: mob programming towards our sprint goal, add details to PBIs.
+    - Jicheng: achieved sprint goal for last sprint planning, refined PBIs.
+    - Carl: worked on achieving the current sprint goal by doing dev work with mob programming
 - In your daily scrums, you discussed: as a group of Developers, what will you do in the next 24 hours to meet the Sprint Goal? In your README, document which team members plan to do which activities. (1 point for each team member's response, up to a maximum of 5 points)
 / 5 pts
-  - July 9th Daily Scrum **TODO**
-    - Teddy
-    - Mel
-    - Daniel
-    - Jicheng
-    - Carl
+  - July 9th Daily Scrum
+    - Teddy: continue with mob programming to achieve the sprint goal.
+    - Mel: achieve our current sprint goal, helping PO to improve backlog refinement skills.
+    - Daniel: continue to pursue the sprint goal.
+    - Jicheng: will be more productive and use more mob programming, with shorter driver switch times.
+    - Carl: continue to work on achieving the current sprint goal.
 - In your daily scrums, you discussed: do you see any impediment that prevents the Developers from meeting the Sprint Goal? What are the impediments? What is your impediment removal plan? (1 point for each question answered)
 / 3 pts
-  - July 9th Daily Scrum **TODO**
+  - July 9th Daily Scrum
+    - We do see an impediment.
+    - Impediment: PO will be away from tomorrow on.
+    - Impediment removal plan: have PO attend remotely, and have a dev (Carl) stand-in for the final presentation for the PO.
 - Every day during the sprint, update your sprint task board and burndown chart. Provide evidence (URLs or images) in your README to show that you did this. (1 point for each time you updated your tracking indicators, up to a maximum of 2 points)
 / 2 pts
   - July 9th sprint board update. **TODO**
