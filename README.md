@@ -301,7 +301,8 @@ We did refined the user sories and added additional details (when needed) & acce
   - All five of the team participated in mob programming. [Proof here.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/blob/main/meta_assets/mob%20programming%20july%209.jpg)
 - Test-Driven Development: There is evidence that you are building your product test-first. There is at least 1 BDD/A-TDD test in your test suite, and it passes. There are at least 30 micro-scale unit tests in your test suite, and they all pass. (1 point for the BDD test. 1 point for each *new* unit test that you created in this sprint, up to a maximum of 10 points)
 / 11 pts
-  - **TODO**
+  - BDD test link. **TODO**
+  - Micro-scale unit tests link. **TODO**
 - Continuous Integration: You have a Continuous Integration system running. You only work on the main/trunk/master together—there are no long-lived code branches. The CI system automatically builds your code every time you push to main/trunk/master. The CI system automatically executes all your tests every time it builds the code. You have provided evidence that your CI system exists and behaves properly. (1 point for each sentence in this rubric element)
 / 5 pts
   - We have the CI system in-place. [Github Actions link.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/actions)
@@ -316,7 +317,11 @@ We did refined the user sories and added additional details (when needed) & acce
   - GitHub Actions executes additional tests before deploying to Firebase production. [Link.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/actions/runs/9858393193/job/27219641585#step:4:62)
 - Sprint Retrospective: Your team conducts a Sprint Retrospective. All team members participate in the sprint retrospective. As a team, you identify at least one helpful change to improve your effectiveness together. You make a concrete plan for making that change during the next sprint. (Provide evidence. 1 point for each sentence in this rubric element.)
 / 4 pts
-  - **TODO**
+  - We've conducted our Sprint retro. [Proof.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/blob/main/meta_assets/retro%20july%2011.jpg)
+  - The retro is also detailed on our [Miro board.](https://miro.com/app/board/uXjVK03o7j4=/)
+  - All team members participated in the sprint retro, except Jicheng as he is away in NY.
+  - We've identified many helpful changes to improve our effectiveness.
+  - We made a concrete plan for making that change, which is to conduct Dart learning sessions.
 - Your team conducts an in-class Sprint Review.
 / 1 pts
   - This is to be done in class and the evidence will be in class.
