@@ -24,7 +24,7 @@ void main() async {
   // Set up the mock behavior
   final mockItems = [
     Item(id: "1", name: "Test Item 1"),
-    Item(id: "2", name: "Test Item 2")
+    Item(id: "2", name: "Test Item 2", owner: "owner_name")
   ];
   when(mockDatabaseService.getItems()).thenAnswer((_) async => mockItems);
 
@@ -219,6 +219,31 @@ void main() async {
     expect(find.byKey(const Key("Name Borrower")), findsAtLeast(1));
   });
 
+  testWidgets('A search box appears on the screen', (WidgetTester tester) async {
+    // Build our app and trigger a frame.
+    await tester.pumpWidget(MyApp(
+      databaseService: mockDatabaseService,
+    ));
 
+    // Allows the future to complete
+    await tester.pump();
+    expect(find.byKey(const Key("Search")), findsOneWidget);
+  });
+
+  testWidgets('borrower can be found by search bar', (WidgetTester tester) async {
+    // Build our app and trigger a frame.
+    await tester.pumpWidget(MyApp(
+      databaseService: mockDatabaseService,
+    ));
+
+    // Allows the future to complete
+    await tester.pump();
+    expect(find.byKey(const Key("Search")), findsOneWidget);
+    await tester.enterText(find.byKey(const Key("Search")), "owner_name");
+    await tester.pumpAndSettle();
+
+    // On the mock database, only one item got owner_name as owner, so only one item appears
+    expect(find.byKey(const Key("Item")), findsExactly(1));
+  });
 
 }

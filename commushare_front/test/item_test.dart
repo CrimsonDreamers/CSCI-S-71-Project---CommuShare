@@ -68,4 +68,11 @@ void main() {
     expect(testItem.owner, isNotNull);
     expect(testItem.owner, "test_owner");
   });
+
+  test('Test an item can have a borrower name', () {
+    final testItem = Item(id: "test_id", name: "test_name", owner: "test_owner", availability: const Availability(available: false, borrower: "borrower_name"));
+    expect(testItem.availability.borrower, isNotNull);
+    expect(testItem.availability.borrower, "borrower_name");
+  });
+
 }

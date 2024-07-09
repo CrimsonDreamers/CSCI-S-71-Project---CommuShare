@@ -42,6 +42,7 @@ class ItemWidgetState extends State<ItemWidget> {
       shownDescription = item.description ?? "";
     }
     return Directionality(
+      key: const Key("Item"),
       textDirection: TextDirection.ltr,
       child: SizedBox(
         width: MediaQuery.of(context).size.width * 0.8,

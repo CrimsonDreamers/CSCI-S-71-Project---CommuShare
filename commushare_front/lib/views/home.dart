@@ -16,6 +16,7 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   late DatabaseService databaseService;
+  String? search;
 
   @override
   void initState() {
@@ -64,6 +65,39 @@ class _HomeState extends State<Home> {
             //   ],
             // ),
             Expanded(child: Container()),
+            Container(
+                  margin: const EdgeInsets.only(
+                    left: 10,
+                  ),
+                  width: MediaQuery.of(context).size.width * 0.6,
+                  child: TextFormField(
+                    key: const Key("Search"),
+                    style: const TextStyle(
+                        fontFamily: "poppins",
+                        fontSize: 14,
+                        color: mainColor),
+                    textAlign: TextAlign.start,
+                    onChanged: (value) {
+                      setState(() {
+                        search = value;
+                      });
+                    },
+                    decoration: const InputDecoration(
+                      hintText: 'Search items by owner',
+                      fillColor: Colors.white,
+                      focusColor: Colors.white,
+                      hoverColor: Colors.white,
+                      border: OutlineInputBorder(
+                          borderSide: BorderSide(color: mainColor)),
+                      hintStyle: TextStyle(
+                          fontSize: 14,
+                          color: Color(0xFFABA8B3),
+                          fontFamily: 'poppins'),
+                    ),
+                  ),
+                ),
+                Container(height: 20,),
+                
             FutureBuilder(
               future: databaseService.getItems(),
               builder:
@@ -75,6 +109,11 @@ class _HomeState extends State<Home> {
                     return Text("Error: ${snapshot.error}");
                   } else {
                     List<Item> items = snapshot.data!;
+                    if (search != null && search != ""){
+
+                      items = items.where((element) => element.owner.contains(search!)).toList();
+                    }
+
                     return SizedBox(
                         width: MediaQuery.of(context).size.width * 0.9,
                         height: MediaQuery.of(context).size.height * 0.5,
