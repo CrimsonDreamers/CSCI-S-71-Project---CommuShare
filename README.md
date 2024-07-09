@@ -232,40 +232,67 @@ We did refined the user sories and added additional details (when needed) & acce
 ### Project Part 4 - Final Sprint
 - Sprint Planning: You have a forecast of how many story points your team can complete during the sprint. The forecast is documented in your README.
 / 1 pts
-  - **TODO**
+  - We forecast we will complete 58 story points, according to empirical evidence, in this sprint.
+  - The forecast can be seen [here.](https://docs.google.com/spreadsheets/d/1VDQO14WLbvyb7d7xZ2lXw-nEitjI2kIVgZPprM8kmAQ/edit?gid=770928292#gid=770928292)
+  - It is also on our [Miro board.](https://miro.com/app/board/uXjVK03o7j4=/)
 - The rationale for your forecast is documented in your README.
 / 1 pts
-  - **TODO**
+  - The rationale is that we completed 58 story points in the last Sprint, so by empirical evidence we should be able to also complete 58 story points this sprint. Also narrowing the optimistic and pessimistic forecasts because we now have some empirical evidence.
 - You pulled stories into your sprint backlog. You pulled stories from the top of your product backlog. The aggregate size of the stories does not exceed your forecast. Developers participated in this activity (and in your project README, you made a statement or provided evidence that only Developers participated in this activity). (1 point for each item)
 / 4 pts
-  - **TODO**
+  - We've pull stories into our sprint backlog, as seen on our [Miro board.](https://miro.com/app/board/uXjVK03o7j4=/)
+  - The stories are from the top of the product backlog, which includes the new PBI from our last retro.
+  - The aggregate size of the stories is exactly 58, which does not exceed our forecast of 58.
+  - Only developers participated in this activity.
 - All of the stories in your sprint backlog are the right size: the size of each backlog item is less than half your forecast velocity for the sprint. If you noticed PBIs that are too large to get done in a sprint, you refined them by splitting them into smaller stories and estimating the smaller stories.
 / 1 pts
-  - **TODO**
+  - All stories are of the right size, the largest is only of size 20 which is less than half of our forecast velocity of 58.
 - You decomposed user stories into developer tasks (1 point). The tasks are clearly listed in your sprint backlog (1 point).
 / 2 pts
-  - **TODO**
+  - We've decomposed user stories into multiple developer tasks, and they are listed alongside the PBIs in the sprint backlog as seen on our [Miro board.](https://miro.com/app/board/uXjVK03o7j4=/)
 - Your sprint backlog, including both the user stories and developer tasks, is represented in a kanban board (1 point). The URL of the kanban board is documented in your README (1 point). Course staff can view the kanban board (1 point).
 / 3 pts
-  - **TODO**
+  - Our sprint backlog includes both the user stories and developer tasks right next to them, and is on our kanban board on our [Miro board.](https://miro.com/app/board/uXjVK03o7j4=/)
+  - The URL is just our [Miro board.](https://miro.com/app/board/uXjVK03o7j4=/)
+  - The Miro board is public access.
 - You have a sprint burndown chart. On the x-axis, you display time markers in units of 1 day. On the y-axis, you display story points remaining to get done. There is a linear curve descending from left to right; the leftmost point of the curve is number of story points in your sprint at sprint day 1; the rightmost point is 0 story points remaining on the last day of the sprint. The burndown chart, or the URL of the burndown chart, is document in your README. Course staff can view the burndown chart. (1 point for each sentence you complete)
 / 6 pts
-  - **TODO**
+  - We have a sprint burndown chart [here.](https://docs.google.com/spreadsheets/d/1VDQO14WLbvyb7d7xZ2lXw-nEitjI2kIVgZPprM8kmAQ/edit?gid=770928292#gid=770928292)
+  - On the x-axis, we have time in units of 1 day.
+  - On the y-axis, we have remaining story points.
+  - There is a linear curve descending from left to right.
+  - The leftmost curve has 58 story points which is the number of story points at sprint day 1.
+  - The rightmost curve is 0 story points on the last sprint day.
+  - The burndown chart URL is [here.](https://docs.google.com/spreadsheets/d/1VDQO14WLbvyb7d7xZ2lXw-nEitjI2kIVgZPprM8kmAQ/edit?gid=770928292#gid=770928292)
+  - The Google Sheet is public access.
 - Daily Scrum: You have conducted multiple Daily Scrums. You document evidence of at least one daily scrum in your README.
 / 1 pts
   - **TODO**
 - In your daily scrums, you discussed: as a group of Developers, what did you do in the last 24 hours that helped you meet the Sprint Goal? In your README, document which team members did which activities. (1 point for each team member's response, up to a maximum of 5 points)
 / 5 pts
-  - **TODO**
+  - July 9th Daily Scrum **TODO**
+    - Teddy
+    - Mel
+    - Daniel
+    - Jicheng
+    - Carl
 - In your daily scrums, you discussed: as a group of Developers, what will you do in the next 24 hours to meet the Sprint Goal? In your README, document which team members plan to do which activities. (1 point for each team member's response, up to a maximum of 5 points)
 / 5 pts
-  - **TODO**
+  - July 9th Daily Scrum **TODO**
+    - Teddy
+    - Mel
+    - Daniel
+    - Jicheng
+    - Carl
 - In your daily scrums, you discussed: do you see any impediment that prevents the Developers from meeting the Sprint Goal? What are the impediments? What is your impediment removal plan? (1 point for each question answered)
 / 3 pts
-  - **TODO**
+  - July 9th Daily Scrum **TODO**
 - Every day during the sprint, update your sprint task board and burndown chart. Provide evidence (URLs or images) in your README to show that you did this. (1 point for each time you updated your tracking indicators, up to a maximum of 2 points)
 / 2 pts
-  - **TODO**
+  - July 9th sprint board update. **TODO**
+  - July 9th burndown chart update. **TODO**
+  - July 10th sprint board update. **TODO**
+  - July 10th burndown chart update. **TODO**
 - Pair- or Mob-Programming: There is evidence that you paired or mobbed on your code. The evidence could be a photo or video of your team working together, or it could be some other kind of evidence. The evidence is included in your README. (1 point for each team member who participated, up to a maximum of 5 points)
 / 5 pts
   - **TODO**
@@ -274,7 +301,10 @@ We did refined the user sories and added additional details (when needed) & acce
   - **TODO**
 - Continuous Integration: You have a Continuous Integration system running. You only work on the main/trunk/master together—there are no long-lived code branches. The CI system automatically builds your code every time you push to main/trunk/master. The CI system automatically executes all your tests every time it builds the code. You have provided evidence that your CI system exists and behaves properly. (1 point for each sentence in this rubric element)
 / 5 pts
-  - **TODO**
+  - We have the CI system in-place. [Github Actions link.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/actions)
+  - We only work on main, see our [commit history.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/commits/main/) And there are no other active branches, see [our branches.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/branches)
+  - The CI system automatically builds our code every time we merge to master. [See example.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/actions/runs/9858393193/job/27219641585)
+  - The CI system is publicly [accessible and viewable.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/actions) And successfully can build and test.
 - Continuous Delivery: You have a Continuous Delivery system running. When the build is "green", the CD system deploys your software to a production environment ("Production"); when the build is "red", the CD system doesn't alter Production. The CD system executes additional tests of your software in Production to ensure Production is up and running successfully after deployment. You have provided evidence that your CD system exists and behaves properly.
 / 5 pts
   - **TODO**
