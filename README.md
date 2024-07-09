@@ -349,7 +349,7 @@ We did refined the user sories and added additional details (when needed) & acce
   - This is to be done in class and the evidence will be in class.
 - You rehearsed your sprint review at least once before the event.
 / 1 pts
-  - **TODO**
+  - Sprint review was rehearsed. [Proof.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/blob/main/meta_assets/sprint%20review%20rehearsal.jpg)
 - All of the PBIs in your product backlog are true user stories.
 / 5 pts
   All of our PBIs are confirmed to be true user stories, after changing them and refining them during the first sprint.
