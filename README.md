@@ -292,10 +292,10 @@ We did refined the user sories and added additional details (when needed) & acce
     - Impediment removal plan: have PO attend remotely, and have a dev (Carl) stand-in for the final presentation for the PO.
 - Every day during the sprint, update your sprint task board and burndown chart. Provide evidence (URLs or images) in your README to show that you did this. (1 point for each time you updated your tracking indicators, up to a maximum of 2 points)
 / 2 pts
-  - July 9th sprint board update. **TODO**
-  - July 9th burndown chart update. **TODO**
-  - July 10th sprint board update. **TODO**
-  - July 10th burndown chart update. **TODO**
+  - [Evidence of sprint burndown update July 9th.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/blob/main/meta_assets/sprint%20burndown%20july%209.png)
+  - [Evidence of sprint task board update July 9th.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/blob/main/meta_assets/kanban%20board%20july%209.png)
+  - [Evidence of sprint burndown update July 10th.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/blob/main/meta_assets/sprint%20burndown%20july%2010.png)
+  - [Evidence of sprint task board update July 10th.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/blob/main/meta_assets/kanban%20board%20july%2010.png)
 - Pair- or Mob-Programming: There is evidence that you paired or mobbed on your code. The evidence could be a photo or video of your team working together, or it could be some other kind of evidence. The evidence is included in your README. (1 point for each team member who participated, up to a maximum of 5 points)
 / 5 pts
   - All five of the team participated in mob programming. [Proof here.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/blob/main/meta_assets/mob%20programming%20july%209.jpg)
