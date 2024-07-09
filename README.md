@@ -267,7 +267,7 @@ We did refined the user sories and added additional details (when needed) & acce
   - The Google Sheet is public access.
 - Daily Scrum: You have conducted multiple Daily Scrums. You document evidence of at least one daily scrum in your README.
 / 1 pts
-  - **TODO**
+  - We have conducted multiple daily scrums. Once a day. [This is evidence for July 9th.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/blob/main/meta_assets/daily%20scrum%20july%209.jpg)
 - In your daily scrums, you discussed: as a group of Developers, what did you do in the last 24 hours that helped you meet the Sprint Goal? In your README, document which team members did which activities. (1 point for each team member's response, up to a maximum of 5 points)
 / 5 pts
   - July 9th Daily Scrum
@@ -298,7 +298,7 @@ We did refined the user sories and added additional details (when needed) & acce
   - July 10th burndown chart update. **TODO**
 - Pair- or Mob-Programming: There is evidence that you paired or mobbed on your code. The evidence could be a photo or video of your team working together, or it could be some other kind of evidence. The evidence is included in your README. (1 point for each team member who participated, up to a maximum of 5 points)
 / 5 pts
-  - **TODO**
+  - All five of the team participated in mob programming. [Proof here.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/blob/main/meta_assets/mob%20programming%20july%209.jpg)
 - Test-Driven Development: There is evidence that you are building your product test-first. There is at least 1 BDD/A-TDD test in your test suite, and it passes. There are at least 30 micro-scale unit tests in your test suite, and they all pass. (1 point for the BDD test. 1 point for each *new* unit test that you created in this sprint, up to a maximum of 10 points)
 / 11 pts
   - **TODO**
