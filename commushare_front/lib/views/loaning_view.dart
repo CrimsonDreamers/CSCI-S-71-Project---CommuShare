@@ -21,6 +21,8 @@ class CreateItemViewState extends State<CreateItemView> {
   CreateItemViewState();
   String name = "";
   String description = "";
+  String location = "";
+  String owner = "";
 
   @override
   void initState() {
@@ -155,6 +157,76 @@ class CreateItemViewState extends State<CreateItemView> {
                   height: MediaQuery.of(context).size.height * 0.04,
                   width: MediaQuery.of(context).size.width * 0.6,
                 ),
+                Container(
+                  margin: const EdgeInsets.only(
+                    left: 10,
+                  ),
+                  width: MediaQuery.of(context).size.width * 0.6,
+                  child: TextFormField(
+                    key: const Key("Item Location Text Field"),
+                    style: const TextStyle(
+                        fontFamily: "poppins",
+                        fontSize: 14,
+                        color: Colors.white),
+                    textAlign: TextAlign.start,
+                    onChanged: (value) {
+                      setState(() {
+                        location = value;
+                      });
+                    },
+                    decoration: const InputDecoration(
+                      hintText: 'Item Location',
+                      fillColor: Colors.white,
+                      focusColor: Colors.white,
+                      hoverColor: Colors.white,
+                      border: OutlineInputBorder(
+                          borderSide: BorderSide(color: Colors.white)),
+                      hintStyle: TextStyle(
+                          fontSize: 14,
+                          color: Color(0xFFABA8B3),
+                          fontFamily: 'poppins'),
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: MediaQuery.of(context).size.height * 0.04,
+                  width: MediaQuery.of(context).size.width * 0.6,
+                ),
+                Container(
+                  margin: const EdgeInsets.only(
+                    left: 10,
+                  ),
+                  width: MediaQuery.of(context).size.width * 0.6,
+                  child: TextFormField(
+                    key: const Key("Owner Name Text Field"),
+                    style: const TextStyle(
+                        fontFamily: "poppins",
+                        fontSize: 14,
+                        color: Colors.white),
+                    textAlign: TextAlign.start,
+                    onChanged: (value) {
+                      setState(() {
+                        owner = value;
+                      });
+                    },
+                    decoration: const InputDecoration(
+                      hintText: 'Owner Name',
+                      fillColor: Colors.white,
+                      focusColor: Colors.white,
+                      hoverColor: Colors.white,
+                      border: OutlineInputBorder(
+                          borderSide: BorderSide(color: Colors.white)),
+                      hintStyle: TextStyle(
+                          fontSize: 14,
+                          color: Color(0xFFABA8B3),
+                          fontFamily: 'poppins'),
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: MediaQuery.of(context).size.height * 0.04,
+                  width: MediaQuery.of(context).size.width * 0.6,
+                ),
                 ElevatedButton(
                     key: const Key("confirm_loan_Button"),
                     style: ButtonStyle(
@@ -162,10 +234,20 @@ class CreateItemViewState extends State<CreateItemView> {
                             ((states) => Colors.white))),
                     onPressed: () async {
                       if (name != "") {
+                        var ownerName = "Harvard University";
+                      if(owner!=""){
+                        ownerName = owner;
+                      }
+                      var locationName = "Harvard Yard";
+                      if(location!=""){
+                        locationName = location;
+                      }
                         await databaseService.addItem(Item(
                             id: const Uuid().v4(),
                             name: name,
-                            description: description));
+                            description: description,
+                            location: locationName,
+                            owner: ownerName));
                         Fluttertoast.showToast(
                             msg: "Item added successfully",
                             toastLength: Toast.LENGTH_SHORT,

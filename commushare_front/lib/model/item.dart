@@ -25,7 +25,8 @@ class Item {
     return Item(
       name: json['name'],
       description: json['description'] ?? "",
-      owner: json['owner'] ?? "",
+      owner: json['owner'] ?? "Harvard University",
+      location: json['location'] ?? "Harvard Yard",
       image: json['image'] ?? "",
       category: json['category'] ?? "",
       id: json['id'],
@@ -37,6 +38,7 @@ class Item {
     'name': name,
     'description': description,
     'owner': owner,
+    'location': location,
     'image': image,
     'category': category,
     'id': id,

@@ -1,8 +1,10 @@
+import 'package:commushare_front/model/item.dart';
 import 'package:commushare_front/service/database.dart';
 import 'package:commushare_front/views/home.dart';
 import 'package:commushare_front/views/loaning_view.dart';
 import 'package:commushare_front/views/login.dart';
 import 'package:commushare_front/views/login_wrapper.dart';
+import 'package:commushare_front/views/view_item.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
@@ -100,6 +102,36 @@ class RouteGenerator {
               );
             });}
 
+      case '/view_item':
+        if(settings.arguments!=null) {
+          var argumentsList = settings.arguments as List;
+          return PageRouteBuilder(
+            pageBuilder: (context, animation, secondaryAnimation) =>
+                ViewItemView(item: argumentsList[0] as Item, databaseService: argumentsList[1] as DatabaseService),
+            transitionsBuilder:
+                (context, animation, secondaryAnimation, child) {
+              animation =
+                  CurvedAnimation(curve: Curves.ease, parent: animation);
+              return FadeTransition(
+                opacity: animation,
+                child: child,
+              );
+            });
+        } else {
+          return PageRouteBuilder(
+            pageBuilder: (context, animation, secondaryAnimation) => Home(
+                  databaseService: DatabaseService(),
+                ),
+            transitionsBuilder:
+                (context, animation, secondaryAnimation, child) {
+              animation =
+                  CurvedAnimation(curve: Curves.ease, parent: animation);
+              return FadeTransition(
+                opacity: animation,
+                child: child,
+              );
+            });
+        }
       default:
         return MaterialPageRoute(
           builder: (_) => Scaffold(

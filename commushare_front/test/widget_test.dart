@@ -140,7 +140,7 @@ void main() async {
 
     // Verify that two form fields appear (Name, Description)
     expect(find.byWidgetPredicate((Widget widget) => widget is FormField),
-        findsExactly(2));
+        findsAtLeast(2));
   });
 
   testWidgets('The loan an item page is clear on its purpose',
@@ -182,4 +182,43 @@ void main() async {
     // Verify that two form fields appear (Name, Description)
     expect(find.byKey(const Key("confirm_loan_Button")), findsOneWidget);
   });
+
+    testWidgets('More detailed FormFields appears in the loan an item page',
+      (WidgetTester tester) async {
+    // Build our app and trigger a frame.
+    await tester.pumpWidget(MyApp(
+      databaseService: mockDatabaseService,
+    ));
+
+    expect(find.byKey(const Key("add_Button")), findsOneWidget);
+    await tester.tap(find.byKey(const Key("add_Button")));
+    await tester.pumpAndSettle();
+
+    // Verify that the appearing view changed and that we are now on the creating item page
+    expect(find.byKey(const Key("CreateItemView")),
+        findsOneWidget);
+
+    // Verify that two form fields appear (Name, Description, Location, Owner)
+    expect(find.byWidgetPredicate((Widget widget) => widget is FormField),
+        findsAtLeast(4));
+  });
+
+  // testWidgets('After clicking on borrow item, a TextFormField appears asking for your name', (WidgetTester tester) async {
+  //   // Build our app and trigger a frame.
+  //   await tester.pumpWidget(MyApp(
+  //     databaseService: mockDatabaseService,
+  //   ));
+
+  //   // Allows the future to complete
+  //   await tester.pump();
+
+  //   expect(find.byKey(const Key("Borrow it")), findsAtLeast(1));
+  //   await tester.tap(find
+  //       .byWidget(find.byKey(const Key("Borrow it")).evaluate().first.widget));
+  //   await tester.pumpAndSettle();
+  //   expect(find.byKey(const Key("Borrow it")), findsAtLeast(1));
+  // });
+
+
+
 }
