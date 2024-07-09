@@ -3,6 +3,7 @@ import 'package:commushare_front/model/availability.dart';
 import 'package:commushare_front/model/item.dart';
 import 'package:commushare_front/service/database.dart';
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:rflutter_alert/rflutter_alert.dart';
 
 class ItemWidget extends StatefulWidget {
@@ -26,6 +27,7 @@ class ItemWidgetState extends State<ItemWidget> {
   String email = "";
   String password = "";
   String name = "";
+  String borrower = "";
   bool login = true;
 
   @override
@@ -77,14 +79,57 @@ class ItemWidgetState extends State<ItemWidget> {
                             
                             title: "Let's grab it !",
                             desc: "Go to ${item.location} to get it",
+                            content: StatefulBuilder(builder: (context, setState) {
+                              return Column(children: [
+                                SizedBox(
+                  height: MediaQuery.of(context).size.height * 0.04,
+                  width: MediaQuery.of(context).size.width * 0.6,
+                ),
+                Container(
+                  margin: const EdgeInsets.only(
+                    left: 10,
+                  ),
+                  width: MediaQuery.of(context).size.width * 0.6,
+                  child: TextFormField(
+                    key: const Key("Name Borrower"),
+                    style: const TextStyle(
+                        fontFamily: "poppins",
+                        fontSize: 14,
+                        color: mainColor),
+                    textAlign: TextAlign.start,
+                    onChanged: (value) => setState(() {
+                      borrower = value;
+                    }),
+                    decoration: const InputDecoration(
+                      hintText: 'Your name*',
+                      border: OutlineInputBorder(
+                          borderSide: BorderSide(color: Colors.white)),
+                      hintStyle: TextStyle(
+                          fontSize: 14,
+                          color: Color(0xFFABA8B3),
+                          fontFamily: 'poppins'),
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: MediaQuery.of(context).size.height * 0.04,
+                  width: MediaQuery.of(context).size.width * 0.6,
+                ),
+                              ],);
+                            },),
                             buttons: [
                               DialogButton(
                                   key: const Key("Alert_Button"),
                                   color:
                                       const Color.fromARGB(255, 19, 31, 44),
                                   onPressed: () async {
-                                    await databaseService.setItemAvailability(item, const Availability(available: false));
+                                    if(borrower!=""){
+                                      await databaseService.setItemAvailability(item, Availability(available: false, borrower: borrower));
                                     Navigator.pushNamed(context, "/");
+                                    } else {
+                                    Fluttertoast.showToast(msg: "Please enter a name");
+                                    }
+                                    
                                   },
                                   child: const Text(
                                     "Ok",

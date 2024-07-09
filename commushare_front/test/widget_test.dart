@@ -203,21 +203,21 @@ void main() async {
         findsAtLeast(4));
   });
 
-  // testWidgets('After clicking on borrow item, a TextFormField appears asking for your name', (WidgetTester tester) async {
-  //   // Build our app and trigger a frame.
-  //   await tester.pumpWidget(MyApp(
-  //     databaseService: mockDatabaseService,
-  //   ));
+  testWidgets('After clicking on borrow item, a TextFormField appears asking for your name', (WidgetTester tester) async {
+    // Build our app and trigger a frame.
+    await tester.pumpWidget(MyApp(
+      databaseService: mockDatabaseService,
+    ));
 
-  //   // Allows the future to complete
-  //   await tester.pump();
+    // Allows the future to complete
+    await tester.pump();
 
-  //   expect(find.byKey(const Key("Borrow it")), findsAtLeast(1));
-  //   await tester.tap(find
-  //       .byWidget(find.byKey(const Key("Borrow it")).evaluate().first.widget));
-  //   await tester.pumpAndSettle();
-  //   expect(find.byKey(const Key("Borrow it")), findsAtLeast(1));
-  // });
+    expect(find.byKey(const Key("Borrow it")), findsAtLeast(1));
+    await tester.tap(find
+        .byWidget(find.byKey(const Key("Borrow it")).evaluate().first.widget));
+    await tester.pumpAndSettle();
+    expect(find.byKey(const Key("Name Borrower")), findsAtLeast(1));
+  });
 
 
 
