@@ -307,43 +307,47 @@ We did refined the user sories and added additional details (when needed) & acce
   - The CI system is publicly [accessible and viewable.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/actions) And successfully can build and test.
 - Continuous Delivery: You have a Continuous Delivery system running. When the build is "green", the CD system deploys your software to a production environment ("Production"); when the build is "red", the CD system doesn't alter Production. The CD system executes additional tests of your software in Production to ensure Production is up and running successfully after deployment. You have provided evidence that your CD system exists and behaves properly.
 / 5 pts
-  - **TODO**
+  - We have the continuous delivery system running, which is deployed by Github Actions. [Screenshot.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/blob/main/meta_assets/continuous%20delivery.png)
+  - When our Github Actions finishes the build and test, it will deploy to Firebase and change the website. [Link.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/actions/runs/9858393193/job/27219641585#step:5:1)
+  - When our Github Actions fails, it does not deploy to Firebase. [Link.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/actions/runs/9811153690)
+  - GitHub Actions executes additional tests before deploying to Firebase production. [Link.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/actions/runs/9858393193/job/27219641585#step:4:62)
 - Sprint Retrospective: Your team conducts a Sprint Retrospective. All team members participate in the sprint retrospective. As a team, you identify at least one helpful change to improve your effectiveness together. You make a concrete plan for making that change during the next sprint. (Provide evidence. 1 point for each sentence in this rubric element.)
 / 4 pts
   - **TODO**
 - Your team conducts an in-class Sprint Review.
 / 1 pts
-  - **TODO**
+  - This is to be done in class and the evidence will be in class.
 - Your in-class sprint review is at most 10 minutes long.
 / 1 pts
-  - **TODO**
+  - This is to be done in class and the evidence will be in class.
 - Your Scrum Master facilitates as needed: keeps track of time, prompts your PO and Developers at the right moments, etc.
 / 2 pts
-  - **TODO**
+  - This is to be done in class and the evidence will be in class.
 - Your PO begins the sprint review by stating its purpose. You welcome your stakeholders to the event, tell them how grateful you are for their participation, and that you're eager to hear their feedback after you show them the product increment.
 / 4 pts
-  - **TODO**
+  - This is to be done in class and the evidence will be in class.
 - Your Product Owner explains your product's far vision and near vision. You use big visible information radiators (e.g., posters or a slide deck) to facilitate your stakeholders' ability to follow along.
 / 3 pts
-  - **TODO**
+  - This is to be done in class and the evidence will be in class.
 - Your PO describes your stakeholders and user personas. You use big visible information radiators (e.g., posters or a slide deck) to facilitate your stakeholders' ability to follow along.
 / 5 pts
-  - **TODO**
+  - This is to be done in class and the evidence will be in class.
 - Your Developers demonstrate your product increment. You demonstrate each product backlog item that you completed. You use big visible information radiators (e.g., your sprint backlog with details of the user stories) to facilitate your stakeholders' ability to follow along. Your product increment is working software.
 / 4 pts
-  - **TODO**
+  - This is to be done in class and the evidence will be in class.
 - Your PO solicits feedback from your stakeholders (using class attendees as stand-ins). You ask them what they would like the next product increment to contain, now that they've seen this increment. You revise your product backlog based on the feedback you receive.
 / 3 pts
-  - **TODO**
+  - This is to be done in class and the evidence will be in class.
 - Your PO shares future plans for your product.
 / 1 pts
-  - **TODO**
+  - This is to be done in class and the evidence will be in class.
 - Your PO wraps up the sprint review with a forecast of what you might deliver in the next sprint (pretend there will be a next sprint), a brief summary of this sprint review, and a message of gratitude to your Scrum team and stakeholders.
 / 3 pts
-  - **TODO**
+  - This is to be done in class and the evidence will be in class.
 - You rehearsed your sprint review at least once before the event.
 / 1 pts
   - **TODO**
 - All of the PBIs in your product backlog are true user stories.
 / 5 pts
-  - **TODO**
+  All of our PBIs are confirmed to be true user stories, after changing them and refining them during the first sprint.
+  - See [Miro board.](https://miro.com/app/board/uXjVK03o7j4=/)
