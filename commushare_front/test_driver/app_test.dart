@@ -8,6 +8,8 @@ Future<void> main() {
     ..features = [RegExp(r'test_driver/features/.*\.feature')]
     ..stepDefinitions = [
       givenTheAppAndItems(),
+      WhenSearchingOwner(),
+      ThenOnlyOneItemAppears()
     ]
     ..reporters = [ProgressReporter()]
     ..restartAppBetweenScenarios = true
