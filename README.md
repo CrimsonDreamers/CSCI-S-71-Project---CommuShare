@@ -333,25 +333,25 @@ We did refined the user sories and added additional details (when needed) & acce
   - This is to be done in class and the evidence will be in class.
 - Your PO begins the sprint review by stating its purpose. You welcome your stakeholders to the event, tell them how grateful you are for their participation, and that you're eager to hear their feedback after you show them the product increment.
 / 4 pts
-  - This is to be done in class and the evidence will be in class.
+  - This is to be done in class and the evidence will be in class. Carl will stand-in as the PO since Jicheng is away.
 - Your Product Owner explains your product's far vision and near vision. You use big visible information radiators (e.g., posters or a slide deck) to facilitate your stakeholders' ability to follow along.
 / 3 pts
-  - This is to be done in class and the evidence will be in class.
+  - This is to be done in class and the evidence will be in class. Carl will stand-in as the PO since Jicheng is away.
 - Your PO describes your stakeholders and user personas. You use big visible information radiators (e.g., posters or a slide deck) to facilitate your stakeholders' ability to follow along.
 / 5 pts
-  - This is to be done in class and the evidence will be in class.
+  - This is to be done in class and the evidence will be in class. Carl will stand-in as the PO since Jicheng is away.
 - Your Developers demonstrate your product increment. You demonstrate each product backlog item that you completed. You use big visible information radiators (e.g., your sprint backlog with details of the user stories) to facilitate your stakeholders' ability to follow along. Your product increment is working software.
 / 4 pts
   - This is to be done in class and the evidence will be in class.
 - Your PO solicits feedback from your stakeholders (using class attendees as stand-ins). You ask them what they would like the next product increment to contain, now that they've seen this increment. You revise your product backlog based on the feedback you receive.
 / 3 pts
-  - This is to be done in class and the evidence will be in class.
+  - This is to be done in class and the evidence will be in class. Carl will stand-in as the PO since Jicheng is away.
 - Your PO shares future plans for your product.
 / 1 pts
-  - This is to be done in class and the evidence will be in class.
+  - This is to be done in class and the evidence will be in class. Carl will stand-in as the PO since Jicheng is away.
 - Your PO wraps up the sprint review with a forecast of what you might deliver in the next sprint (pretend there will be a next sprint), a brief summary of this sprint review, and a message of gratitude to your Scrum team and stakeholders.
 / 3 pts
-  - This is to be done in class and the evidence will be in class.
+  - This is to be done in class and the evidence will be in class. Carl will stand-in as the PO since Jicheng is away.
 - You rehearsed your sprint review at least once before the event.
 / 1 pts
   - Sprint review was rehearsed. [Proof.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/blob/main/meta_assets/sprint%20review%20rehearsal.jpg)
