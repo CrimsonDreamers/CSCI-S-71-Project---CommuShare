@@ -302,7 +302,11 @@ We did refined the user sories and added additional details (when needed) & acce
 - Test-Driven Development: There is evidence that you are building your product test-first. There is at least 1 BDD/A-TDD test in your test suite, and it passes. There are at least 30 micro-scale unit tests in your test suite, and they all pass. (1 point for the BDD test. 1 point for each *new* unit test that you created in this sprint, up to a maximum of 10 points)
 / 11 pts
   - BDD test link. **TODO**
-  - Micro-scale unit tests link. **TODO**
+  - Micro-scale unit tests.
+    - We have 5 new tests [here.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/blob/main/commushare_front/test/item_test.dart#L48-L76)
+    - And we have 3 new tests [here.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/blob/main/commushare_front/test/item_widget_test.dart#L76-L99)
+    - And we have 5 new tests [here.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/blob/main/commushare_front/test/widget_test.dart#L168-L247)
+    - We have 13 new tests, and we have 33 unit tests in total.
 - Continuous Integration: You have a Continuous Integration system running. You only work on the main/trunk/master together—there are no long-lived code branches. The CI system automatically builds your code every time you push to main/trunk/master. The CI system automatically executes all your tests every time it builds the code. You have provided evidence that your CI system exists and behaves properly. (1 point for each sentence in this rubric element)
 / 5 pts
   - We have the CI system in-place. [Github Actions link.](https://github.com/CrimsonDreamers/CSCI-S-71-Project---CommuShare/actions)
