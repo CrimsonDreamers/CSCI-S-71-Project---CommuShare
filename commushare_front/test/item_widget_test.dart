@@ -17,6 +17,7 @@ import 'widget_test.mocks.dart';
 
 void main() {
   final testItem = Item(id: "test_id", name: "test_name");
+  final testItemUnavailable = Item(id: "test_id", name: "test_name", availability: const Availability(available: false));
   final mockDatabaseService = MockDatabaseService();
 
   testWidgets('item widget build properly',
@@ -50,9 +51,19 @@ void main() {
     // Wait for the navigation to complete 
     await tester.pumpAndSettle();
 
-    //expect(find.byWidgetPredicate((Widget widget) => widget is Alert),
-     //   findsOneWidget);
-     expect(find.byKey(const Key("Alert_Button")), findsOneWidget);
+    expect(find.byKey(const Key("Alert_Button")), findsOneWidget);
+  });
+
+  testWidgets('Can put borrower name',
+      (WidgetTester tester) async {
+    // Show one item
+    await tester.pumpWidget(MaterialApp(home: Scaffold(body: ItemWidget(item: testItem, databaseService: mockDatabaseService,))));
+    await tester.tap(find.text("Borrow it"));
+
+    // Wait for the navigation to complete 
+    await tester.pumpAndSettle();
+
+    expect(find.byKey(const Key("Name Borrower")), findsOneWidget);
   });
 
   testWidgets('there is no return button on available items',
@@ -62,12 +73,28 @@ void main() {
     expect(find.byKey(const Key("Return")), findsNothing);
   });
 
+  testWidgets('there is no borrow button on unavailable items',
+      (WidgetTester tester) async {
+    // Show one unavailable item
+    await tester.pumpWidget(MaterialApp(home: Scaffold(body: ItemWidget(item: testItemUnavailable, databaseService: mockDatabaseService,))));
+    expect(find.byKey(const Key("Borrow it")), findsNothing);
+  });
+
   testWidgets('there is a return button on unavailable items',
       (WidgetTester tester) async {
-    final testItemUnavailable = Item(id: "test_id", name: "test_name", availability: const Availability(available: false));
-
     // Show one unavailable item
     await tester.pumpWidget(MaterialApp(home: Scaffold(body: ItemWidget(item: testItemUnavailable, databaseService: mockDatabaseService,))));
     expect(find.byKey(const Key("Return")), findsOneWidget);
+  });
+
+  testWidgets('Return button clickable',
+      (WidgetTester tester) async {
+    // Show one unavailable item
+    await tester.pumpWidget(MaterialApp(home: Scaffold(body: ItemWidget(item: testItemUnavailable, databaseService: mockDatabaseService,))));
+
+    await tester.tap(find.byKey(const Key("Return")));
+
+    // Wait for the navigation to complete 
+    await tester.pumpAndSettle();
   });
 }
