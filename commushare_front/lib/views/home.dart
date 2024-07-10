@@ -116,7 +116,7 @@ class _HomeState extends State<Home> {
 
                     return SizedBox(
                         width: MediaQuery.of(context).size.width * 0.9,
-                        height: MediaQuery.of(context).size.height * 0.5,
+                        height: MediaQuery.of(context).size.height * 0.7,
                         child: ListView.builder(
                           itemCount: items.length,
                           itemBuilder: (BuildContext context, int index) {
