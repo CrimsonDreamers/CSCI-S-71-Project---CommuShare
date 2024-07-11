@@ -6,6 +6,9 @@ Project - **CommuShare**\
 CommuShare is a web-app platform that allows helpful neighbors to share extra items with campus students who can browse and borrow items.\
 CommuShare is ONLINE: https://commu-share.firebaseapp.com/
 
+#### Slack Channel
+https://agilesoftwarecourse.slack.com/archives/C07A303HV29
+
 #### Miro Boards
 We have decided to use Miro to facilitate conversation and collaboration.\
 [Miro board project planning](https://miro.com/app/board/uXjVK3SfOu8=/?share_link_id=510488792723)\
